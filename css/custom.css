@@ -1,0 +1,16 @@
+.mob-nav{
+    display:none;    
+}
+.desktop-nav .nav-link{
+    padding:.5rem .8rem;
+    font-size: 14px;
+}
+
+@media screen and (max-width:769px){
+    .mob-nav{
+        display: block;
+    }
+    .desktop-nav{
+        display: none;
+    }
+}
