@@ -58,6 +58,100 @@ h1, h2, h3, h4, h5, h6, p{
     color: #979797;
     font-size: 2.5rem;
 }
+.sub-light-sec{
+    margin-top: 18rem;
+    background: url("../img/sub-light-bg.png") no-repeat;
+}
+.subsidiary-container{
+    margin-top: 18rem;
+}
+.sub-light-sec h3{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.sub-light-sec p{
+    font-size: 15px;
+}
+.circle-1, .circle-2, .circle-3, .circle-5, .circle-6, .circle-7, .sub-light-sec, .expert-imges{
+    background-position: center !important;
+    background-size: contain !important;
+}
+.circle-1 h5, .circle-2 h5, .circle-3 h5, .circle-5 h5, .circle-6 h5, .circle-7 h5{
+    color: #95CE4D;
+}
+.circle-1 p, .circle-2 p, .circle-3 p, .circle-5 p, .circle-6 p, .circle-7 p{
+    color: #ffffff;
+
+}
+.circle-1{
+    background: url("../img//house-lighthill.png") no-repeat;
+}
+.circle-2{
+    background: url("../img/coin-lighthill.png") no-repeat;
+}
+.circle-3{
+    background: url("../img/truck-lighhill.png") no-repeat;
+}
+.circle-5{
+    background: url("../img/plane-lighthill.png") no-repeat;
+}
+.circle-6{
+    background: url("../img//money-lighthill.png") no-repeat;
+}
+.circle-7{
+    background: url("../img/farm-lighthill.png") no-repeat;
+}
+.circle-1, .circle-6{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.circle-6{
+    top: 0;
+}
+.circle-2, .circle-7{
+    width: 320px;
+    height: 320px;
+}
+.circle-3, .circle-5{
+    width: 200px;
+    height: 200px;
+}
+.expert-imges{
+    background: url("../img/sub-light-bg.png") no-repeat;
+    background-position: left !important;
+}
+.expert-imges img:first-child{
+    position: relative;
+    z-index: 5;
+}
+.expert-imges img:last-child{
+    position: absolute;
+    right:6rem ;
+    top: 8rem;
+    z-index: 1;
+}
+.client-section{
+    background: #E9E9E9;
+}
+.parallax{
+    background: url("../img/para-img.png") no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 350px;
+}
+.talk-section{
+    background: #332851;
+}
+.btn-col a{
+    bottom: 0;
+}
+
+
+/* media queries for tablet, ipad and mobile */
 
 @media screen and (max-width:768px){
     .mob-nav{
@@ -83,9 +177,71 @@ h1, h2, h3, h4, h5, h6, p{
     .main-list li{
         width: 100% !important;
         text-align: center;
+        padding: 2rem;
+    }
+    .main-list h5{
+        font-size: 1.0rem;
+    }
+    .main-list p{
+        font-size: 16px;
     }
     .main-list img{
         display: block;
-        margin: .5rem auto;
+        margin: 0 auto .5rem;
+        width:50px;
+        height: 50px;
+    }
+    .sub-light-sec{
+        margin-top: 30rem;
+        text-align: center;
+    }
+    .sub-light-sec h3{
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    .subsidiary-container{
+        margin-top: 10px;
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+    }
+    .expert-imges img:first-child{
+        width: 180px;
+        height: 200px;
+    }
+    .expert-imges img:last-child{
+        width: 180px;
+        height: 200px;
+        right:2rem ;
+        top: 7rem;
+        z-index: 1;
+    }
+}
+@media screen and (max-width:450px){
+    .circle-1, .circle-2, .circle-3, .circle-4, .circle-6, .circle-7{
+        position: unset;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .sub-light-sec{
+        margin-top: 50rem;
+        text-align: center;
+    }
+    .expert-imges{
+        margin-bottom: 5rem;
+    }
+    .expert-imges img:first-child{
+        left: 2rem;
+    }
+    .expert-imges img:last-child{
+        right:2rem ;
+    }
+    .parallax{
+        height: 650px;
+    }
+    .btn-col{
+        justify-content: start !important;
+    }
+    .btn-col a{
+        position: unset !important;
     }
 }
