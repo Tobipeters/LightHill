@@ -1,6 +1,15 @@
 h1, h2, h3, h4, h5, h6, p{
     color: #170538;
 }
+.text-green{
+    color: #95CE4D;
+}
+.bg-green{
+    background: #95CE4D;
+}
+.bg-sec{
+    background: #EBEBEB;
+}
 .bg-nav{
     background: #F7FFFF;
     color: #504B69;
@@ -72,16 +81,9 @@ h1, h2, h3, h4, h5, h6, p{
 .sub-light-sec p{
     font-size: 15px;
 }
-.circle-1, .circle-2, .circle-3, .circle-5, .circle-6, .circle-7, .sub-light-sec, .expert-imges{
+.circle-1, .circle-2, .circle-3, .circle-5, .circle-6, .circle-7, .sub-light-sec, .expert-imges, .callback{
     background-position: center !important;
     background-size: contain !important;
-}
-.circle-1 h5, .circle-2 h5, .circle-3 h5, .circle-5 h5, .circle-6 h5, .circle-7 h5{
-    color: #95CE4D;
-}
-.circle-1 p, .circle-2 p, .circle-3 p, .circle-5 p, .circle-6 p, .circle-7 p{
-    color: #ffffff;
-
 }
 .circle-1{
     background: url("../img//house-lighthill.png") no-repeat;
@@ -149,7 +151,37 @@ h1, h2, h3, h4, h5, h6, p{
 .btn-col a{
     bottom: 0;
 }
-
+.star-rating .active, .boss-text, .quote-l{
+    color: #95CE4D;
+}
+.star-rating .unactive{
+    color: #ccc;
+}
+.all-testimonies{
+    background: #F8F8F8;
+}
+.quote-r, .quote-l{
+    transform: scaleX(-1);
+    font-size: 2rem;
+}
+.quote-r{
+    top: 0;
+    left: -1rem;
+}
+.quote-l{
+    bottom: 0;
+    right: -1rem;
+}
+.team{
+    background: #F9F9F9;
+}
+.callback{
+    background: url("../img/caalback.png") no-repeat;
+    background-size: cover !important;
+}
+footer{
+    background: #292929;
+}
 
 /* media queries for tablet, ipad and mobile */
 
