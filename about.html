@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lighthill Home</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" id="main-styles" href="./css/theme.min.css">
+    <!-- css for external css -->
+    <link rel="stylesheet" href="./css/vendor.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/custom.css">
+    <!-- Font Awesome link -->
+    <link rel="stylesheet" href="./font/css/all.css">
+    <script defer src="./font/js/all.js"></script>
+</head>
+
+<body>
+    <!-- Header section -->
+    <header>
+
+        <!-- Topbar-->
+        <div class="topbar text-dark bg-sec">
+            <div class="container">
+                <div>
+                    <div class="topbar-text text-nowrap d-none d-md-inline-block border-left border-light pl-3 ml-3">
+                        <span class="mr-4">
+                            Mon - Fri 8:00 - 18:00
+                        </span>
+                        <span class="mr-4">
+                            <a class="topbar-link text-dark" href="tel:+2348098765432">
+                                +234 809 876 5432
+                            </a>
+                        </span>
+                        <span class="mr-4">
+                            info@lighthillng.com
+                        </span>
+                    </div>
+                </div>
+                <div class="topbar-text  d-md-none ml-auto">
+
+                </div>
+                <div class="d-none d-md-block ml-3 text-nowrap">
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Desktop Navbar -->
+        <div class="navbar-sticky bg-nav">
+            <div class="navbar navbar-expand-lg navbar-light">
+                <div class="container">
+                    <!-- Logo for large screen -->
+                    <a class="navbar-brand d-none d-sm-block mr-3 flex-shrink-0" href="index.html"
+                        style="min-width: 7rem;">
+                        <img width="142" src="./img/light hill logo.png" alt="Light Hill" />
+                    </a>
+                    <!-- Logo for smaller screen (Mobile phones) -->
+                    <a class="navbar-brand d-sm-none mr-2" href="index.html" style="min-width: 4.625rem;">
+                        <img width="74" src="./img/light hill logo.png" alt="Light Hill" /></a>
+
+
+                    <!-- Navbar Items-->
+                    <div class="navbar-toolbar d-flex flex-shrink-0 align-items-center">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarCollapse">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <ul class="nav desktop-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="team.html">Team LightHill</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                                    aria-haspopup="true" aria-expanded="false">Subsidiaries</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="property.html">LightHill Property</a>
+                                    <a class="dropdown-item" href="investment.html">InsightHills Investment</a>
+                                    <a class="dropdown-item" href="import.html">Import and Support</a>
+                                    <a class="dropdown-item" href="logistic.html">Logistics</a>
+                                    <a class="dropdown-item" href="trading.html">InsightHills BDC/Currency Trading</a>
+                                    <a class="dropdown-item" href="agro.html">Heighthills Agro-Allied</a>
+                                    <a class="dropdown-item" href="#">Coming soon</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="gallery.html">Gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="blog.html">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link" href="#">Search</a>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar navbar-expand-lg navbar-light navbar-stuck-menu mt-n2 pt-0 pb-2">
+                <div class="container">
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="nav mob-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active d-inline-block" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link d-inline-block" href="about.html">About us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link d-inline-block" href="#">Team LightHill</a>
+                            </li>
+                            <li class="nav-item dropdown  d-inline-block">
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                                    aria-haspopup="true" aria-expanded="false">Subsidiaries</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">LightHill Property</a>
+                                    <a class="dropdown-item" href="#">InsightHills Investment</a>
+                                    <a class="dropdown-item" href="#">Import and Support</a>
+                                    <a class="dropdown-item" href="#">Logistics</a>
+                                    <a class="dropdown-item" href="#">InsightHills BDC/Currency Trading</a>
+                                    <a class="dropdown-item" href="#">Heighthills Agro-Allied</a>
+                                    <a class="dropdown-item" href="#">Logistics</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  d-inline-block" href="#">Gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link d-inline-block" href="#">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link d-inline-block" href="#">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link d-inline-block" href="#">Team LightHill</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <!--About section-->
+    <section class="p-5 main-bg">
+        <div class="container py-xl-2 mb-5">
+            <div class=" text-center px-2 py-5 px-md-5">
+                <h2 class="mb-4 slider-header">About Us</h2>
+                <p>We have been in successful operation for over seven years now with outstanding results.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Welcome list text -->
+    <div class="container position-relative wlc-list">
+        <ul class="list-group list-group-horizontal-md shadow main-list my-5 mx-3">
+            <li class="list-group-item li-1 bg-secondary py-3 px-4 px-md-3 py-sm-5 text-wrap">
+                <h2 class="mb-0 py-lg-5 my-lg-0 mt-md-5  slider-header text-wrap"> Our Principle</h2>
+            </li>
+            <li class="list-group-item li-2  py-md-3 px-md-3">
+                <div class="row">
+                    <div class="col-lg-3 px-0 col-md-12">
+                        <img src="./img/list-img-1.png" class="d-block mx-auto">
+                    </div>
+                    <div class="col-lg-9 col-md-12">
+                        <h5 class="mb-3">Vision</h5>
+                        <p class="mb-0">
+                            To be a global reference point in wealth creation
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item li-3  py-md-3 px-md-3">
+                <div class="row">
+                    <div class="col-lg-2 px-0 col-md-12">
+                        <img src="./img/list-img-3.png" class="d-block mx-auto">
+                    </div>
+                    <div class="col-lg-10 col-md-12">
+                        <h5 class="mb-3">Our Mission</h5>
+                        <p class="mb-0">
+                            To provide excellent and comprehensive financial services in a friendly environment using
+                            qualified and experience personnel with appropriate technology delighting our stakeholders
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item li-4  py-md-3 px-md-3">
+                <div class="row">
+                    <div class="col-lg-2 px-0 col-md-12">
+                        <img src="./img/list-img-2.png" class="d-block mx-auto">
+                    </div>
+                    <div class="col-lg-10 col-md-12">
+                        <h5 class="mb-3">A Global Reference</h5>
+                        <p class="mb-0">
+                            Recognizing and internalizing customers’ service as the essence of our existence. Every
+                            component of our strategy is tailored to fulfilling our mission to deliver strictly
+                            personalized service to customers supported by people, processes and latest technology.
+                        </p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- what you need to know -->
+    <section class="py-5 know-section">
+        <div class="container">
+            <div class="text-center px-3 px-lg-5">
+                <h3 class="mb-5">What you need to know about LightHill</h3>
+                <p class="mb-4">
+                    Lighthill Investment Company is a leading investment and financial company that provides a
+                    wide range of investment solutions, forex trading services, and real estate management. Our
+                    platforms are specifically designed to meet the needs of individual, corporate and
+                    institutional clients.
+                </p>
+                <p class="mb-4">
+                    With passion, respect and dignity, we relentlessly seek innovative
+                    solutions that will deliver great value to our customers at highly competitive prices while
+                    ensuring optimal value for our stakeholders.
+                </p>
+                <p>
+                    Lighthill Investment Company Ltd is a
+                    multiple-ranged products and services company, with its subsidiary companies involved in the
+                    following businesses – Currency trading & investment, Bureau De Change energy, logistics
+                    services ,Real Estate and Consumer loan & lease services.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Background not yet implemented -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center px-3 px-lg-5">
+                <h3 class="mb-5">Achievement</h3>
+                <p class="mb-4">
+                    Lighthill Investment Company is a leading investment and financial company that provides a wide
+                    range of investment solutions, forex trading services, and real estate management. Our platforms are
+                    specifically designed to meet the needs of individual, corporate and institutional clients.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Succession plan -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="./img/planning.png" width="400" height="470" class="ml-0 ml-md-auto d-block" />
+                </div>
+                <div class="col-md-6">
+                    <div class="position-relative">
+                        <div class="bg-light p-3 succession-header text-center text-md-left px-3 px-md-0">
+                            <h5 class="font-weight-bold mb-0 mt-4 mt-md-0">Our Succession Plan</h5>
+                        </div>
+                    </div>
+                    <div class="succession-p text-center text-md-left px-3 px-md-0">
+                        <p>
+                            Transcending innovation and an innovation culture within our subsidiaries through successive
+                            directors, managers and employees with versification through conglomerate or concentric
+                            diversification to provide a variety of products and services, Application of total quality
+                            management principles across our product and service chains to ensure the present and future
+                            are
+                            properly managed, and a human resource approach, that considers employees are key resources
+                            that
+                            control all other resources
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Client section -->
+
+    <section class="client-section py-5">
+        <div class="container">
+            <h3 class="mb-4 text-center">Our Clients</h3>
+            <div class="d-flex justify-content-center mx-auto flex-wrap">
+                <img src="./img/client-1.png" width="170" height="170" />
+                <img src="./img/client-2.png" width="170" height="170" />
+                <img src="./img/client-3.png" width="170" height="170" />
+                <img src="./img/client-4.png" width="170" height="170" />
+                <img src="./img/client-5.png" width="170" height="170" />
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About Team -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row px-5">
+                <div class="col-md-4">
+                    <div class="row mb-3 mb-mb-0">
+                        <div class="col-3">
+                            <img src="./img/shake.png" width="40" height="40" class="d-block mx-auto" />
+                        </div>
+                        <div class="col-9">
+                            <h5>Trust the Team</h5>
+                            <p>We believe great teams are built on mutual trust, shared ownership and accountability.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="row mb-3 mb-mb-0">
+                        <div class="col-3">
+                            <img src="./img/team-icon.png" width="40" height="40" class="d-block mx-auto" />
+                        </div>
+                        <div class="col-9">
+                            <h5>A Team Of Professionals</h5>
+                            <p>We believe that diverse backgrounds and experiences make us stronger.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="row mb-3 mb-mb-0">
+                        <div class="col-3">
+                            <img src="./img/thumbs-up.png" width="30" height="30" class="d-block mx-auto" />
+                        </div>
+                        <div class="col-9">
+                            <h5>Why Choose Us?</h5>
+                            <p>Our integrity, Speedy implementation of transactions, Exceptional returns on investment,
+                                Highly competitive pricing, Proven track record</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Team HillLight -->
+    <section class="team py-5">
+        <div class="container">
+            <h3 class="text-center">Team LightHill</h3>
+            <p class="text-center">Meet the Best Team</p>
+            <div class="d-flex justify-content-around flex-wrap px-5 py-4">
+                <img src="./img/team-1.png" class="rounded-circle team-img-size px-3 py-3" />
+                <img src="./img/team-2.png" class="rounded-circle team-img-size px-3 py-3" />
+                <img src="./img/team-3.png" class="rounded-circle team-img-size px-3 py-3" />
+                <img src="./img/team-4.png" class="rounded-circle team-img-size px-3 p-3" />
+            </div>
+            <p class="text-center mt-3 mb-0">Meet the Team LightHill <i class="fas fa-long-arrow-alt-right ml-2"></i>
+            </p>
+        </div>
+    </section>
+
+    <!-- Success story -->
+    <section class="parallax">
+        <div class="container">
+            <h3 class="pt-5 text-center">Our Success Stories</h3>
+            <p class="text-center">What we have done</p>
+            <div class="d-flex justify-content-around mx-auto flex-wrap py-3">
+                <div class="text-center px-4 mb-md-1 mb-4">
+                    <h1 class="font-weight-bold">10000</h1>
+                    <h5 class="font-weight-bold">All Time Clients</h5>
+                </div>
+                <div class="text-center px-4 mb-md-1 mb-4">
+                    <h1 class="font-weight-bold">979</h1>
+                    <h5 class="font-weight-bold">Clients in This Year</h5>
+                </div>
+                <div class="text-center px-4 mb-md-1 mb-4">
+                    <h1 class="font-weight-bold">300</h1>
+                    <h5 class="font-weight-bold">New Projectsr</h5>
+                </div>
+                <div class="text-center px-4 mb-md-1 mb-4">
+                    <h1 class="font-weight-bold">35%</h1>
+                    <h5 class="font-weight-bold">Avg Profit Increased</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-4 col-md-5">
+                    <img src="./img/light-logo.png" width="160" height="50" class="" />
+                    <form class="mt-5 mb-4">
+                        <input type="text" class="form-control rounded-0 border-0 mb-3" placeholder="Full Name">
+                        <input type="text" class="form-control rounded-0 border-0 mb-3" placeholder="Email">
+                        <textarea class="form-control rounded-0 border-0 mb-3" placeholder="Message"
+                            rows="4"></textarea>
+                        <button type="submit" class="btn btn-light shadow ">Submit</button>
+                    </form>
+
+                    <div class="mt-5">
+                        <p class="text-green">Social media</p>
+                        <div class="text-light font-lg">
+                            <i class="fab fa-facebook-f mr-3"></i>
+                            <i class="fab fa-twitter mr-3"></i>
+                            <i class="fab fa-linkedin-in mr-3"></i>
+                            <i class="fab fa-google-plus-g mr-3"></i>
+                            <i class="fab fa-instagram mr-3"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-1"></div>
+                <div class="col-lg-5 col-md-6 mt-5 mt-md-0">
+                    <h6 class="text-light">Contact Us</h6>
+                    <div class="row my-4">
+                        <div class="col-md-7">
+                            <p class="text-green">Lagos Address</p>
+                            <div class="row">
+                                <div class="col-2">
+                                    <img src="./img/marker.png" width="50" height="50" class="d-block mx-auto" />
+                                </div>
+                                <div class="col-10">
+                                    <small class="text-light mb-3 d-block">1, Alhaja Abass street. Ogudu, Lagos P.O.Box
+                                        8862, Somolu,
+                                        Lagos.
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-2">
+                                    <img src="./img/tel.png" width="15" height="15" class="d-block mx-auto" />
+                                </div>
+                                <div class="col-10">
+                                    <small class="text-light mb-3 d-block">+234 (0)1291 9028, (0)9087088923
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-2">
+                                    <img src="./img/postal.png" width="15" height="15" class="d-block mx-auto" />
+                                </div>
+                                <div class="col-10">
+                                    <small class="text-light mb-3 d-block">info@lighthillng.com </small>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                        <div class="col-md-5">
+                            <div id="map"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <p class="text-green">Abuja Address</p>
+                            <div class="row">
+                                <div class="col-2">
+                                    <img src="./img/marker.png" width="50" height="50" class="d-block mx-auto" />
+                                </div>
+                                <div class="col-10">
+                                    <small class="text-light mb-3 d-block">1, Alhaja Abass street. Ogudu, Lagos P.O.Box
+                                        8862, Somolu,
+                                        Lagos.
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-2">
+                                    <img src="./img/tel.png" width="15" height="15" class="d-block mx-auto" />
+                                </div>
+                                <div class="col-10">
+                                    <small class="text-light mb-3 d-block">+234 (0)1291 9028, (0)9087088923
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-2">
+                                    <img src="./img/postal.png" width="15" height="15" class="d-block mx-auto" />
+                                </div>
+                                <div class="col-10">
+                                    <small class="text-light mb-3 d-block">info@lighthillng.com </small>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                        <div class="col-md-4"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-7">
+
+                        </div>
+                        <div class="col-md-5"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr />
+        <div class="container-fluid py-4">
+            <h6 class="text-green">Subsidiaries</h6>
+            <div class="row">
+                <div class="col-lg-8 text-center text-md-left text-light">
+                    <small class="mx-3 mb-2 d-inline-block">. LightHill Property</small>
+                    <small class="mx-3 mb-2 d-inline-block">. InsightHills Investment</small>
+                    <small class="mx-3 mb-2 d-inline-block">. Logistics</small>
+                    <small class="mx-3 mb-2 d-inline-block">. Insighthills BDC / Currency Trading</small>
+                    <small class="mx-3 mb-2 d-inline-block">. Heighthills Agro-Allied</small>
+                </div>
+                <div class="col-lg-4">
+                    <small class="text-center text-lg-right d-block mt-4 mt-lg-0 text-light">Copyright 2018, All Right
+                        Reserved, LightHill Group</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Script section -->
+    <script src="./js/vendor.min.js"></script>
+    <script src="./js/theme.min.js"></script>
+
+    <!-- Google map -->
+    <script>
+        // Initialize and add the map
+        function initMap() {
+            // The location of Uluru
+            var uluru = { lat: -25.344, lng: 131.036 };
+            // The map, centered at Uluru
+            var map = new google.maps.Map(
+                document.getElementById('map'), { zoom: 4, center: uluru });
+            // The marker, positioned at Uluru
+            var marker = new google.maps.Marker({ position: uluru, map: map });
+        }
+    </script>
+    <script defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCiB8XzBXvEHb0nSrdkKo-T6kdsjfkWcd8&callback=initMap">
+        </script>
+</body>
+
+</html>

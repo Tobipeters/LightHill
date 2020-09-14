@@ -14,6 +14,10 @@ h1, h2, h3, h4, h5, h6, p{
     background: #F7FFFF;
     color: #504B69;
 }
+.main-bg{
+    background: url("../img/main-bg.png") no-repeat center;
+    background-size: cover;
+}
 .mob-nav{
     display:none;    
 }
@@ -32,6 +36,22 @@ h1, h2, h3, h4, h5, h6, p{
 }
 .slider-bg{
     background: #F7FFFF !important;
+}
+.main-slider .tns-nav {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 6rem;
+}
+.main-slider [data-nav], .main-slider  [data-nav].tns-nav-active{
+    border: 1px solid #170538;
+    width: 2rem;
+}
+.main-slider  [data-nav].tns-nav-active{
+background:  #170538;
+}
+.main-slider [data-nav]{
+    background: transparent;
 }
 .wlc-div{
     bottom: 50%;
@@ -65,10 +85,10 @@ h1, h2, h3, h4, h5, h6, p{
 }
 .main-list .slider-header{
     color: #979797;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
 }
 .sub-light-sec{
-    margin-top: 18rem;
+    margin-top: 13rem;
     background: url("../img/sub-light-bg.png") no-repeat;
 }
 .subsidiary-container{
@@ -145,6 +165,10 @@ h1, h2, h3, h4, h5, h6, p{
     background-size: cover;
     height: 350px;
 }
+.team-img-size{
+    width: 270px;
+    height: auto;
+}
 .talk-section{
     background: #332851;
 }
@@ -182,10 +206,56 @@ h1, h2, h3, h4, h5, h6, p{
 footer{
     background: #292929;
 }
+/* Google map location style */
+#map {
+    width: 100%;
+    height: 150px;
+    background-color: grey;
+  }
+ .wlc-list{
+    margin-bottom: 30rem;
+} 
+
+/* About page style */
+.li-1{
+    width: 15%;
+}
+.li-2{
+    width: 21%;
+}
+.li-3{
+    width: 29%;
+}
+.li-4{
+    width: 35%;
+}
+.li-1 img, .li-2 img, .li-3 img, .li-4 img{
+    width: 40px !important;
+    height: 40px !important;
+}
+.know-section{
+    margin-top: -20rem;
+}
+.succession-p{
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+.succession-header{
+    position: absolute;
+    top: 6.5rem;
+    left: -5rem;
+}
+
+
 
 /* media queries for tablet, ipad and mobile */
 
-@media screen and (max-width:768px){
+@media screen and (max-width:769px){
+    p{
+        font-size: .85rem;
+    }
     .mob-nav{
         display: block;
     }
@@ -196,12 +266,15 @@ footer{
         color:#504b69a8 !important;
         border-bottom: none;
     }
+    .main-slider .tns-nav {
+        bottom: .3rem;
+    }
     .wlc-div{
         bottom: 0;
         position: unset;
     }
     .main-list{
-        top: -2rem;
+        top: -10rem;
     }
     .main-list .slider-header{
         font-size: 1.5rem;
@@ -209,13 +282,13 @@ footer{
     .main-list li{
         width: 100% !important;
         text-align: center;
-        padding: 2rem;
+        padding: 1rem !important;
     }
     .main-list h5{
         font-size: 1.0rem;
     }
     .main-list p{
-        font-size: 16px;
+        font-size: 14px;
     }
     .main-list img{
         display: block;
@@ -224,7 +297,7 @@ footer{
         height: 50px;
     }
     .sub-light-sec{
-        margin-top: 30rem;
+        margin-top: 18rem;
         text-align: center;
     }
     .sub-light-sec h3{
@@ -247,15 +320,29 @@ footer{
         top: 7rem;
         z-index: 1;
     }
+    .know-section{
+        margin-top: -10rem;
+    }
+    .succession-header{
+        top: 3rem;
+    }
 }
+
+
 @media screen and (max-width:450px){
+    .main-slider .tns-nav {
+        bottom: -3rem;
+    }
+    .main-list li{
+        padding: 1.7rem !important;
+    }
     .circle-1, .circle-2, .circle-3, .circle-4, .circle-6, .circle-7{
         position: unset;
         margin-top: 2rem;
         margin-bottom: 2rem;
     }
     .sub-light-sec{
-        margin-top: 50rem;
+        margin-top: 42rem;
         text-align: center;
     }
     .expert-imges{
@@ -275,5 +362,21 @@ footer{
     }
     .btn-col a{
         position: unset !important;
+    }
+    .know-section{
+        margin-top: 40rem;
+    }
+    .succession-header, .succession-p{
+        position: static;
+    }
+
+}
+
+
+
+/* Rare exceptions */
+@media screen and (max-width:320px){
+    .know-section{
+        margin-top: 45rem;
     }
 }
