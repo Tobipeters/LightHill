@@ -11063,10 +11063,17 @@ dd {
 
 @font-face {
     font-family: 'cartzilla-icons';
-    src: url("../fonts/cartzilla-iconsc17f.ttf?v4xwry") format("truetype"), url("../fonts/cartzilla-iconsc17f.woff?v4xwry") format("woff"), url("../fonts/cartzilla-iconsc17f.svg?v4xwry#cartzilla-icons") format("svg");
+    src: url("./fonts/cartzilla-iconsc17f.ttf?v4xwry") format("truetype"), url("./fonts/cartzilla-iconsc17f.woff?v4xwry") format("woff"), url("./fonts/cartzilla-iconsc17f.svg?v4xwry#cartzilla-icons") format("svg");
     font-weight: normal;
     font-style: normal
 }
+
+/* @font-face {
+    font-family: 'long-arror';
+    src: url("./fonts/cartzilla-iconsc17f.ttf?v4xwry") format("truetype"), url("./fonts/cartzilla-iconsc17f.woff?v4xwry") format("woff"), url("./fonts/cartzilla-iconsc17f.svg?v4xwry#cartzilla-icons") format("svg");
+    font-weight: normal;
+    font-style: normal
+} */
 
 [class^="czi-"],
 [class*=" czi-"] {
@@ -15606,7 +15613,7 @@ a.badge-shadow:hover {
     -webkit-transform: scale(0.3);
     transform: scale(0.3);
     color: #fff;
-    font-family: 'cartzilla-icons';
+    font-family: 'More Info';
     font-size: 1.75rem;
     text-align: center;
     line-height: 2.875rem;

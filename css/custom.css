@@ -1,4 +1,4 @@
-h1, h2, h3, h4, h5, h6, p{
+h1, h2, h3, h4, h5, h6, p, .text-dark-blue{
     color: #170538;
 }
 .text-green{
@@ -16,6 +16,10 @@ h1, h2, h3, h4, h5, h6, p{
 }
 .main-bg{
     background: url("../img/main-bg.png") no-repeat center;
+    background-size: cover;
+}
+.map-bg{
+    background: url("../img/map-bg.png") no-repeat center;
     background-size: cover;
 }
 .mob-nav{
@@ -229,7 +233,7 @@ footer{
 .li-4{
     width: 35%;
 }
-.li-1 img, .li-2 img, .li-3 img, .li-4 img{
+.li-1 img, .li-2 img, .li-3 img, .li-4 img, .li-img{
     width: 40px !important;
     height: 40px !important;
 }
@@ -246,6 +250,22 @@ footer{
     position: absolute;
     top: 6.5rem;
     left: -5rem;
+}
+.mgt-sect{
+    margin-top: 11rem;
+}
+.lighthill-card, .card-img-height img{
+    border-radius: 30px;
+}
+.card-img-height img{
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.card-img-height{
+    height: 200px;
+}
+.blog-section{
+    margin-top: -6rem;
 }
 
 
@@ -368,6 +388,12 @@ footer{
     }
     .succession-header, .succession-p{
         position: static;
+    }
+    .mgt-sect{
+        margin-top: 33rem;
+    }
+    .blog-section{
+        margin-top: -7rem;
     }
 
 }
