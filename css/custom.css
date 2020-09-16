@@ -49,7 +49,9 @@ h1, h2, h3, h4, h5, h6, p, .text-dark-blue{
     /* background: url("../img/main-bg.png") no-repeat;
     background-size: cover;
     background-position: center; */
-    height: 600px;
+}
+.main-slider{
+    height: 500px;
 }
 .main-slider .tns-nav {
     position: absolute;
@@ -151,8 +153,8 @@ background:  #170538;
     top: 0;
 }
 .circle-2, .circle-7{
-    width: 320px;
-    height: 320px;
+    width: 290px;
+    height: 290px;
 }
 .circle-3, .circle-5{
     width: 200px;
@@ -200,6 +202,17 @@ background:  #170538;
 }
 .all-testimonies{
     background: #F8F8F8;
+}
+.all-testimonies [data-controls='prev'], .all-testimonies [data-controls='next']{
+    color: #fff;
+    background: #95CE4D;
+    font-size: 1.3rem;
+}
+.all-testimonies [data-controls='prev']{
+    left: -2rem;
+}
+ .all-testimonies [data-controls='next']{
+    right: -2rem;
 }
 .all-testimonies .card{
     background: transparent ;
@@ -349,8 +362,8 @@ footer{
         color:#504b69a8 !important;
         border-bottom: none;
     }
-    .slider-bg{
-        height: 500px;
+    .main-slider{
+        height: 220px;
     }
     .main-slider .tns-nav {
         bottom: .3rem;
@@ -360,7 +373,7 @@ footer{
         position: unset;
     }
     .main-list{
-        top: -10rem;
+        top: -1rem;
     }
     .main-list .slider-header{
         font-size: 1.5rem;
