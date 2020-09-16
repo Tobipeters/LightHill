@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Lighthill Home</title>
+    <title>Lighthill Blog</title>
+
+    <!-- favicon -->
+    <link rel="icon" href="https://lighthillng.com/wp-content/uploads/2018/03/cropped-nG128kEm_400x400-192x192.jpg"
+        sizes="192x192" />
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -26,8 +30,8 @@
     <header>
 
         <!-- Topbar-->
-        <div class="topbar text-dark bg-sec">
-            <div class="container">
+        <div class="topbar text-dark bg-sec d-none d-lg-block">
+            <div class="container-fluid">
                 <div>
                     <div class="topbar-text text-nowrap d-none d-md-inline-block border-left border-light pl-3 ml-3">
                         <span class="mr-4">
@@ -43,11 +47,19 @@
                         </span>
                     </div>
                 </div>
-                <div class="topbar-text  d-md-none ml-auto">
-
-                </div>
-                <div class="d-none d-md-block ml-3 text-nowrap">
-
+                <div class="topbar-text ml-auto">
+                    <div class="top-number d-inline-block mr-4">
+                        <h6 class="mb-1 font-weight-bold">Number 1</h6>
+                        <p class="mb-0">In Lagos</p>
+                    </div>
+                    <div class="top-number d-inline-block mr-4">
+                        <h6 class="mb-1 font-weight-bold">Number 1</h6>
+                        <p class="mb-0">In Currency trading</p>
+                    </div>
+                    <div class="top-number d-inline-block">
+                        <h6 class="mb-1 font-weight-bold">Trusted By</h6>
+                        <p class="mb-0">Several Customers</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -104,9 +116,11 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="contact.html">Contact</a>
                             </li>
-                            <!-- <li class="nav-item">
-                                <a class="nav-link" href="#">Search</a>
-                            </li> -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -122,32 +136,34 @@
                                 <a class="nav-link d-inline-block" href="about.html">About us</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link d-inline-block" href="#">Team LightHill</a>
+                                <a class="nav-link d-inline-block" href="team.html">Team LightHill</a>
                             </li>
                             <li class="nav-item dropdown  d-inline-block">
                                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
                                     aria-haspopup="true" aria-expanded="false">Subsidiaries</a>
                                 <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">LightHill Property</a>
-                                    <a class="dropdown-item" href="#">InsightHills Investment</a>
-                                    <a class="dropdown-item" href="#">Import and Support</a>
-                                    <a class="dropdown-item" href="#">Logistics</a>
-                                    <a class="dropdown-item" href="#">InsightHills BDC/Currency Trading</a>
-                                    <a class="dropdown-item" href="#">Heighthills Agro-Allied</a>
+                                    <a class="dropdown-item" href="property.html">LightHill Property</a>
+                                    <a class="dropdown-item" href="investment.html">InsightHills Investment</a>
+                                    <a class="dropdown-item" href="import.html">Import and Support</a>
+                                    <a class="dropdown-item" href="logistic.html">Logistics</a>
+                                    <a class="dropdown-item" href="trading.html">InsightHills BDC/Currency Trading</a>
+                                    <a class="dropdown-item" href="agro.html">Heighthills Agro-Allied</a>
                                     <a class="dropdown-item" href="#">Logistics</a>
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link  d-inline-block" href="#">Gallery</a>
+                                <a class="nav-link  d-inline-block" href="gallery.html">Gallery</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link d-inline-block" href="#">Blog</a>
+                                <a class="nav-link d-inline-block" href="blog.html">Blog</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link d-inline-block" href="#">Contact</a>
+                                <a class="nav-link d-inline-block" href="contact.html">Contact</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link d-inline-block" href="#">Team LightHill</a>
+                                <a class="nav-link d-inline-block" href="#">
+                                    <i class="fa fa-search"></i>
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -155,6 +171,7 @@
             </div>
         </div>
     </header>
+
 
 
 
@@ -169,7 +186,7 @@
 
 
 
-    <!-- what you need to know -->
+    <!-- Blog Session -->
     <section class="py-5 blog-section bg-sec">
         <div class="container">
             <div class="row">
@@ -181,67 +198,107 @@
                         <div class="card-body py-5">
                             <small class="text-green d-block mb-3">September 14, 2020</small>
                             <div class="text-muted">
-                                    <small class="d-inline-block mr-3"><i class="fas fa-file mr-2"></i> LightHill</small>
-                                    <small class="d-inline-block mr-3"><i class="fas fa-folder-open mr-2"></i> Blog</small>
-                                    <small class="d-inline-block mr-3"><i class="fas fa-comment-alt mr-2"></i>0 Comment</small>
+                                <small class="d-inline-block mr-3"><i class="fas fa-file mr-2"></i> LightHill</small>
+                                <small class="d-inline-block mr-3"><i class="fas fa-folder-open mr-2"></i> Blog</small>
+                                <small class="d-inline-block mr-3"><i class="fas fa-comment-alt mr-2"></i>0
+                                    Comment</small>
                             </div>
                             <h5 class="card-title mt-3">US CORE PCE PRICE INDEX</h5>
                             <small class="card-text font-size-sm text-muted d-block">
-                                The Core PCE price Index is the less volatile measure of the PCE price index which excludes the more volatile and seasonal food and energy prices...
+                                The Core PCE price Index is the less volatile measure of the PCE price index which
+                                excludes the more volatile and seasonal food and energy prices...
 
                             </small>
 
-                            <a class="text-dark-blue mt-4 font-weight-bold d-block" href="#">View more Info <i class="fas fa-long-arrow-alt-right ml-2"></i></a>
+                            <a class="text-dark-blue mt-4 font-weight-bold d-block" href="#">View more Info <i
+                                    class="fas fa-long-arrow-alt-right ml-2"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 my-3">
-                        <div class="card lighthill-card shadow">
-                            <div class="card-img-top card-img-height">
-                                <img src="./img/blog-img-2.jpg" alt="Blog Image" />
+                    <div class="card lighthill-card shadow">
+                        <div class="card-img-top card-img-height">
+                            <img src="./img/blog-img-2.jpg" alt="Blog Image" />
+                        </div>
+                        <div class="card-body py-5">
+                            <small class="text-green d-block mb-3">September 14, 2020</small>
+                            <div class="text-muted">
+                                <small class="d-inline-block mr-3"><i class="fas fa-file mr-2"></i> LightHill</small>
+                                <small class="d-inline-block mr-3"><i class="fas fa-folder-open mr-2"></i> Blog</small>
+                                <small class="d-inline-block mr-3"><i class="fas fa-comment-alt mr-2"></i>0
+                                    Comment</small>
                             </div>
-                            <div class="card-body py-5">
-                                <small class="text-green d-block mb-3">September 14, 2020</small>
-                                <div class="text-muted">
-                                        <small class="d-inline-block mr-3"><i class="fas fa-file mr-2"></i> LightHill</small>
-                                        <small class="d-inline-block mr-3"><i class="fas fa-folder-open mr-2"></i> Blog</small>
-                                        <small class="d-inline-block mr-3"><i class="fas fa-comment-alt mr-2"></i>0 Comment</small>
-                                </div>
-                                <h5 class="card-title mt-3">US CORE PCE PRICE INDEX</h5>
-                                <small class="card-text font-size-sm text-muted d-block">
-                                    The Core PCE price Index is the less volatile measure of the PCE price index which excludes the more volatile and seasonal food and energy prices...
-    
-                                </small>
-    
-                                <a class="text-dark-blue mt-4 font-weight-bold d-block" href="#">View more Info <i class="fas fa-long-arrow-alt-right ml-2"></i></a>
-                            </div>
+                            <h5 class="card-title mt-3">US CORE PCE PRICE INDEX</h5>
+                            <small class="card-text font-size-sm text-muted d-block">
+                                The Core PCE price Index is the less volatile measure of the PCE price index which
+                                excludes the more volatile and seasonal food and energy prices...
+
+                            </small>
+
+                            <a class="text-dark-blue mt-4 font-weight-bold d-block" href="#">View more Info <i
+                                    class="fas fa-long-arrow-alt-right ml-2"></i></a>
                         </div>
                     </div>
-                    <div class="col-md-4 my-3">
-                            <div class="card lighthill-card shadow">
-                                <div class="card-img-top card-img-height">
-                                    <img src="./img/blog-img-1.png" alt="Blog Image" />
-                                </div>
-                                <div class="card-body py-5">
-                                    <small class="text-green d-block mb-3">September 14, 2020</small>
-                                    <div class="text-muted">
-                                            <small class="d-inline-block mr-3"><i class="fas fa-file mr-2"></i> LightHill</small>
-                                            <small class="d-inline-block mr-3"><i class="fas fa-folder-open mr-2"></i> Blog</small>
-                                            <small class="d-inline-block mr-3"><i class="fas fa-comment-alt mr-2"></i>0 Comment</small>
-                                    </div>
-                                    <h5 class="card-title mt-3">US CORE PCE PRICE INDEX</h5>
-                                    <small class="card-text font-size-sm text-muted d-block">
-                                        The Core PCE price Index is the less volatile measure of the PCE price index which excludes the more volatile and seasonal food and energy prices...
-        
-                                    </small>
-        
-                                    <a class="text-dark-blue mt-4 font-weight-bold d-block" href="#">View more Info <i class="fas fa-long-arrow-alt-right ml-2"></i></a>
-                                </div>
-                            </div>
+                </div>
+                <div class="col-md-4 my-3">
+                    <div class="card lighthill-card shadow">
+                        <div class="card-img-top card-img-height">
+                            <img src="./img/blog-img-1.png" alt="Blog Image" />
                         </div>
+                        <div class="card-body py-5">
+                            <small class="text-green d-block mb-3">September 14, 2020</small>
+                            <div class="text-muted">
+                                <small class="d-inline-block mr-3"><i class="fas fa-file mr-2"></i> LightHill</small>
+                                <small class="d-inline-block mr-3"><i class="fas fa-folder-open mr-2"></i> Blog</small>
+                                <small class="d-inline-block mr-3"><i class="fas fa-comment-alt mr-2"></i>0
+                                    Comment</small>
+                            </div>
+                            <h5 class="card-title mt-3">US CORE PCE PRICE INDEX</h5>
+                            <small class="card-text font-size-sm text-muted d-block">
+                                The Core PCE price Index is the less volatile measure of the PCE price index which
+                                excludes the more volatile and seasonal food and energy prices...
+
+                            </small>
+
+                            <a class="text-dark-blue mt-4 font-weight-bold d-block" href="#">View more Info <i
+                                    class="fas fa-long-arrow-alt-right ml-2"></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+
+            <h6 class="font-weight-bold text-center mt-5 ">Pages</h6>
+            <nav class="mb-4 mx-auto d-flex justify-content-center" aria-label="Page navigation example">
+                <ul class="pagination">
+                    <li class="page-item active">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <i class="fas fa-angle-left"></i>
+                        </a>
+                    </li>
+                    <li class="page-item d-sm-none">
+                        <span class="page-link page-link-static">1 / 5</span>
+                    </li>
+                    <li class="page-item d-none d-sm-block">
+                        <a class="page-link" href="#">1</a>
+                    </li>
+                    <!-- <li class="page-item  d-none d-sm-block" aria-current="page">
+                        <span class="page-link">
+                            2
+                            <span class="sr-only">(current)</span>
+                        </span>
+                    </li> -->
+                    <li class="page-item active">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <i class="fas fa-angle-right"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </section>
+
+
 
 
 
@@ -271,171 +328,151 @@
         </div>
     </section>
 
-      <!-- Footer -->
-      <footer>
-            <div class="container py-5">
-                <div class="row">
-                    <div class="col-lg-4 col-md-5">
-                        <img src="./img/light-logo.png" width="160" height="50" class="" />
-                        <form class="mt-5 mb-4">
-                            <input type="text" class="form-control rounded-0 border-0 mb-3" placeholder="Full Name">
-                            <input type="text" class="form-control rounded-0 border-0 mb-3" placeholder="Email">
-                            <textarea class="form-control rounded-0 border-0 mb-3" placeholder="Message"
-                                rows="4"></textarea>
-                            <button type="submit" class="btn btn-light shadow ">Submit</button>
-                        </form>
-    
-                        <div class="mt-5">
-                            <p class="text-green">Social media</p>
-                            <div class="text-light font-lg">
-                                <i class="fab fa-facebook-f mr-3"></i>
-                                <i class="fab fa-twitter mr-3"></i>
-                                <i class="fab fa-linkedin-in mr-3"></i>
-                                <i class="fab fa-google-plus-g mr-3"></i>
-                                <i class="fab fa-instagram mr-3"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-1"></div>
-                    <div class="col-lg-5 col-md-6 mt-5 mt-md-0">
-                        <h6 class="text-light">Contact Us</h6>
-                        <div class="row my-4">
-                            <div class="col-md-7">
-                                <p class="text-green">Lagos Address</p>
-                                <div class="row">
-                                    <div class="col-2">
-                                        <img src="./img/marker.png" width="50" height="50" class="d-block mx-auto" />
-                                    </div>
-                                    <div class="col-10">
-                                        <small class="text-light mb-3 d-block">1, Alhaja Abass street. Ogudu, Lagos P.O.Box
-                                            8862, Somolu,
-                                            Lagos.
-                                        </small>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-2">
-                                        <img src="./img/tel.png" width="15" height="15" class="d-block mx-auto" />
-                                    </div>
-                                    <div class="col-10">
-                                        <small class="text-light mb-3 d-block">+234 (0)1291 9028, (0)9087088923
-                                        </small>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-2">
-                                        <img src="./img/postal.png" width="15" height="15" class="d-block mx-auto" />
-                                    </div>
-                                    <div class="col-10">
-                                        <small class="text-light mb-3 d-block">info@lighthillng.com </small>
-                                    </div>
-                                </div>
-    
-    
-    
-                            </div>
-                            <div class="col-md-5">
-                                <div class="map-holder">
-                                    <iframe
-                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.61175673917!2d3.3913639142667407!3d6.570586124438286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b929c3c80fb7f%3A0xf557747284860990!2sLightHill%20Group!5e0!3m2!1sen!2sng!4v1600243733776!5m2!1sen!2sng"
-                                        width="150" height="150" frameborder="0" style="border:0;" allowfullscreen=""
-                                        aria-hidden="false" tabindex="0"></iframe>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-7">
-                                <p class="text-green">Abuja Address</p>
-                                <div class="row">
-                                    <div class="col-2">
-                                        <img src="./img/marker.png" width="50" height="50" class="d-block mx-auto" />
-                                    </div>
-                                    <div class="col-10">
-                                        <small class="text-light mb-3 d-block">1, Alhaja Abass street. Ogudu, Lagos P.O.Box
-                                            8862, Somolu,
-                                            Lagos.
-                                        </small>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-2">
-                                        <img src="./img/tel.png" width="15" height="15" class="d-block mx-auto" />
-                                    </div>
-                                    <div class="col-10">
-                                        <small class="text-light mb-3 d-block">+234 (0)1291 9028, (0)9087088923
-                                        </small>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-2">
-                                        <img src="./img/postal.png" width="15" height="15" class="d-block mx-auto" />
-                                    </div>
-                                    <div class="col-10">
-                                        <small class="text-light mb-3 d-block">info@lighthillng.com </small>
-                                    </div>
-                                </div>
-    
-    
-    
-                            </div>
-                            <div class="col-md-5">
-                                <div class="map-holder">
-                                    <iframe
-                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.61175673917!2d3.3913639142667407!3d6.570586124438286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b929c3c80fb7f%3A0xf557747284860990!2sLightHill%20Group!5e0!3m2!1sen!2sng!4v1600243733776!5m2!1sen!2sng"
-                                        width="150" height="150" frameborder="0" style="border:0;" allowfullscreen=""
-                                        aria-hidden="false" tabindex="0"></iframe>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-7">
-    
-                            </div>
-                            <div class="col-md-5"></div>
+    <!-- Footer -->
+    <footer>
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-4 col-md-5">
+                    <img src="./img/light-logo.png" width="160" height="50" class="" />
+                    <form class="mt-5 mb-4">
+                        <input type="text" class="form-control rounded-0 border-0 mb-3" placeholder="Full Name">
+                        <input type="text" class="form-control rounded-0 border-0 mb-3" placeholder="Email">
+                        <textarea class="form-control rounded-0 border-0 mb-3" placeholder="Message"
+                            rows="4"></textarea>
+                        <button type="submit" class="btn btn-light shadow ">Submit</button>
+                    </form>
+
+                    <div class="mt-5">
+                        <p class="text-green">Social media</p>
+                        <div class="text-light font-lg">
+                            <i class="fab fa-facebook-f mr-3"></i>
+                            <i class="fab fa-twitter mr-3"></i>
+                            <i class="fab fa-linkedin-in mr-3"></i>
+                            <i class="fab fa-google-plus-g mr-3"></i>
+                            <i class="fab fa-instagram mr-3"></i>
                         </div>
                     </div>
                 </div>
-            </div>
-    
-            <hr />
-            <div class="container-fluid py-4">
-                <h6 class="text-green">Subsidiaries</h6>
-                <div class="row">
-                    <div class="col-lg-8 text-center text-md-left text-light">
-                        <small class="mx-3 mb-2 d-inline-block">. LightHill Property</small>
-                        <small class="mx-3 mb-2 d-inline-block">. InsightHills Investment</small>
-                        <small class="mx-3 mb-2 d-inline-block">. Logistics</small>
-                        <small class="mx-3 mb-2 d-inline-block">. Insighthills BDC / Currency Trading</small>
-                        <small class="mx-3 mb-2 d-inline-block">. Heighthills Agro-Allied</small>
+                <div class="col-lg-3 col-md-1"></div>
+                <div class="col-lg-5 col-md-6 mt-5 mt-md-0">
+                    <h6 class="text-light">Contact Us</h6>
+                    <div class="row my-4">
+                        <div class="col-md-7">
+                            <p class="text-green">Lagos Address</p>
+                            <div class="row">
+                                <div class="col-2">
+                                    <img src="./img/marker.png" width="50" height="50" class="d-block mx-auto" />
+                                </div>
+                                <div class="col-10">
+                                    <small class="text-light mb-3 d-block">1, Alhaja Abass street. Ogudu, Lagos P.O.Box
+                                        8862, Somolu,
+                                        Lagos.
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-2">
+                                    <img src="./img/tel.png" width="15" height="15" class="d-block mx-auto" />
+                                </div>
+                                <div class="col-10">
+                                    <small class="text-light mb-3 d-block">+234 (0)1291 9028, (0)9087088923
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-2">
+                                    <img src="./img/postal.png" width="15" height="15" class="d-block mx-auto" />
+                                </div>
+                                <div class="col-10">
+                                    <small class="text-light mb-3 d-block">info@lighthillng.com </small>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                        <div class="col-md-5">
+                            <div class="map-holder">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.61175673917!2d3.3913639142667407!3d6.570586124438286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b929c3c80fb7f%3A0xf557747284860990!2sLightHill%20Group!5e0!3m2!1sen!2sng!4v1600243733776!5m2!1sen!2sng"
+                                    width="150" height="150" frameborder="0" style="border:0;" allowfullscreen=""
+                                    aria-hidden="false" tabindex="0"></iframe>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-lg-4">
-                        <small class="text-center text-lg-right d-block mt-4 mt-lg-0 text-light">Copyright 2018, All Right
-                            Reserved, LightHill Group</small>
+                    <div class="row">
+                        <div class="col-md-7">
+                            <p class="text-green">Abuja Address</p>
+                            <div class="row">
+                                <div class="col-2">
+                                    <img src="./img/marker.png" width="50" height="50" class="d-block mx-auto" />
+                                </div>
+                                <div class="col-10">
+                                    <small class="text-light mb-3 d-block">1, Alhaja Abass street. Ogudu, Lagos P.O.Box
+                                        8862, Somolu,
+                                        Lagos.
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-2">
+                                    <img src="./img/tel.png" width="15" height="15" class="d-block mx-auto" />
+                                </div>
+                                <div class="col-10">
+                                    <small class="text-light mb-3 d-block">+234 (0)1291 9028, (0)9087088923
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-2">
+                                    <img src="./img/postal.png" width="15" height="15" class="d-block mx-auto" />
+                                </div>
+                                <div class="col-10">
+                                    <small class="text-light mb-3 d-block">info@lighthillng.com </small>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                        <div class="col-md-5">
+                            <div class="map-holder">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.61175673917!2d3.3913639142667407!3d6.570586124438286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b929c3c80fb7f%3A0xf557747284860990!2sLightHill%20Group!5e0!3m2!1sen!2sng!4v1600243733776!5m2!1sen!2sng"
+                                    width="150" height="150" frameborder="0" style="border:0;" allowfullscreen=""
+                                    aria-hidden="false" tabindex="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-7">
+
+                        </div>
+                        <div class="col-md-5"></div>
                     </div>
                 </div>
             </div>
-        </footer>
+        </div>
 
-    <!-- Script section -->
-    <script src="./js/vendor.min.js"></script>
-    <script src="./js/theme.min.js"></script>
+        <hr />
+        <div class="container-fluid py-4">
+            <h6 class="text-green">Subsidiaries</h6>
+            <div class="row">
+                <div class="col-lg-8 text-center text-md-left text-light">
+                    <small class="mx-3 mb-2 d-inline-block">. LightHill Property</small>
+                    <small class="mx-3 mb-2 d-inline-block">. InsightHills Investment</small>
+                    <small class="mx-3 mb-2 d-inline-block">. Logistics</small>
+                    <small class="mx-3 mb-2 d-inline-block">. Insighthills BDC / Currency Trading</small>
+                    <small class="mx-3 mb-2 d-inline-block">. Heighthills Agro-Allied</small>
+                </div>
+                <div class="col-lg-4">
+                    <small class="text-center text-lg-right d-block mt-4 mt-lg-0 text-light">Copyright 2018, All Right
+                        Reserved, LightHill Group</small>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-    <!-- Google map -->
-    <script>
-        // Initialize and add the map
-        function initMap() {
-            // The location of Uluru
-            var uluru = { lat: -25.344, lng: 131.036 };
-            // The map, centered at Uluru
-            var map = new google.maps.Map(
-                document.getElementById('map'), { zoom: 4, center: uluru });
-            // The marker, positioned at Uluru
-            var marker = new google.maps.Marker({ position: uluru, map: map });
-        }
-    </script>
-    <script defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCiB8XzBXvEHb0nSrdkKo-T6kdsjfkWcd8&callback=initMap">
-        </script>
 </body>
 
 </html>

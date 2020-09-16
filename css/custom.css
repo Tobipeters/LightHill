@@ -45,7 +45,11 @@ h1, h2, h3, h4, h5, h6, p, .text-dark-blue{
     border-bottom: 1.2px solid #95CE4D !important;
 }
 .slider-bg{
-    background: #F7FFFF !important;
+    background-color: #F7FFFF !important;
+    /* background: url("../img/main-bg.png") no-repeat;
+    background-size: cover;
+    background-position: center; */
+    height: 600px;
 }
 .main-slider .tns-nav {
     position: absolute;
@@ -345,6 +349,9 @@ footer{
         color:#504b69a8 !important;
         border-bottom: none;
     }
+    .slider-bg{
+        height: 500px;
+    }
     .main-slider .tns-nav {
         bottom: .3rem;
     }
@@ -446,7 +453,7 @@ footer{
         position: unset !important;
     }
     .know-section{
-        margin-top: 40rem;
+        margin-top: 42rem;
     }
     .succession-header, .succession-p{
         position: static;

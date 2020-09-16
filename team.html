@@ -27,12 +27,11 @@
 
 <body>
     <!-- Header section -->
-
     <header>
 
         <!-- Topbar-->
         <div class="topbar text-dark bg-sec d-none d-lg-block">
-            <div class="container">
+            <div class="container-fluid">
                 <div>
                     <div class="topbar-text text-nowrap d-none d-md-inline-block border-left border-light pl-3 ml-3">
                         <span class="mr-4">
@@ -631,22 +630,6 @@
     <script src="./js/vendor.min.js"></script>
     <script src="./js/theme.min.js"></script>
 
-    <!-- Google map -->
-    <script>
-        // Initialize and add the map
-        function initMap() {
-            // The location of Uluru
-            var uluru = { lat: -25.344, lng: 131.036 };
-            // The map, centered at Uluru
-            var map = new google.maps.Map(
-                document.getElementById('map'), { zoom: 4, center: uluru });
-            // The marker, positioned at Uluru
-            var marker = new google.maps.Marker({ position: uluru, map: map });
-        }
-    </script>
-    <script defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCiB8XzBXvEHb0nSrdkKo-T6kdsjfkWcd8&callback=initMap">
-        </script>
 </body>
 
 </html>
