@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Lighthill Home</title>
+    <title>Lighthill About</title>
+
+    <!-- favicon -->
+    <link rel="icon" href="https://lighthillng.com/wp-content/uploads/2018/03/cropped-nG128kEm_400x400-192x192.jpg"
+        sizes="192x192" />
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -26,7 +30,7 @@
     <header>
 
         <!-- Topbar-->
-        <div class="topbar text-dark bg-sec">
+        <div class="topbar text-dark bg-sec d-none d-lg-block">
             <div class="container">
                 <div>
                     <div class="topbar-text text-nowrap d-none d-md-inline-block border-left border-light pl-3 ml-3">
@@ -43,11 +47,19 @@
                         </span>
                     </div>
                 </div>
-                <div class="topbar-text  d-md-none ml-auto">
-
-                </div>
-                <div class="d-none d-md-block ml-3 text-nowrap">
-
+                <div class="topbar-text ml-auto">
+                    <div class="top-number d-inline-block mr-4">
+                        <h6 class="mb-1 font-weight-bold">Number 1</h6>
+                        <p class="mb-0">In Lagos</p>
+                    </div>
+                    <div class="top-number d-inline-block mr-4">
+                        <h6 class="mb-1 font-weight-bold">Number 1</h6>
+                        <p class="mb-0">In Currency trading</p>
+                    </div>
+                    <div class="top-number d-inline-block">
+                        <h6 class="mb-1 font-weight-bold">Trusted By</h6>
+                        <p class="mb-0">Several Customers</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -104,9 +116,11 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="contact.html">Contact</a>
                             </li>
-                            <!-- <li class="nav-item">
-                                <a class="nav-link" href="#">Search</a>
-                            </li> -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -122,32 +136,34 @@
                                 <a class="nav-link d-inline-block" href="about.html">About us</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link d-inline-block" href="#">Team LightHill</a>
+                                <a class="nav-link d-inline-block" href="team.html">Team LightHill</a>
                             </li>
                             <li class="nav-item dropdown  d-inline-block">
                                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
                                     aria-haspopup="true" aria-expanded="false">Subsidiaries</a>
                                 <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">LightHill Property</a>
-                                    <a class="dropdown-item" href="#">InsightHills Investment</a>
-                                    <a class="dropdown-item" href="#">Import and Support</a>
-                                    <a class="dropdown-item" href="#">Logistics</a>
-                                    <a class="dropdown-item" href="#">InsightHills BDC/Currency Trading</a>
-                                    <a class="dropdown-item" href="#">Heighthills Agro-Allied</a>
+                                    <a class="dropdown-item" href="property.html">LightHill Property</a>
+                                    <a class="dropdown-item" href="investment.html">InsightHills Investment</a>
+                                    <a class="dropdown-item" href="import.html">Import and Support</a>
+                                    <a class="dropdown-item" href="logistic.html">Logistics</a>
+                                    <a class="dropdown-item" href="trading.html">InsightHills BDC/Currency Trading</a>
+                                    <a class="dropdown-item" href="agro.html">Heighthills Agro-Allied</a>
                                     <a class="dropdown-item" href="#">Logistics</a>
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link  d-inline-block" href="#">Gallery</a>
+                                <a class="nav-link  d-inline-block" href="gallery.html">Gallery</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link d-inline-block" href="#">Blog</a>
+                                <a class="nav-link d-inline-block" href="blog.html">Blog</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link d-inline-block" href="#">Contact</a>
+                                <a class="nav-link d-inline-block" href="contact.html">Contact</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link d-inline-block" href="#">Team LightHill</a>
+                                <a class="nav-link d-inline-block" href="#">
+                                    <i class="fa fa-search"></i>
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -161,9 +177,9 @@
     <!--About section-->
     <section class="p-5 main-bg">
         <div class="container py-xl-2 mb-5">
-            <div class=" text-center px-2 py-5 px-md-5">
+            <div class=" text-center px-2 mx-0 mx-md-4 py-5  px-md-5">
                 <h2 class="mb-4 slider-header">About Us</h2>
-                <p>We have been in successful operation for over seven years now with outstanding results.</p>
+                <p class="">We have been in successful operation for over seven years now with outstanding results.</p>
             </div>
         </div>
     </section>
@@ -172,9 +188,9 @@
     <div class="container position-relative wlc-list">
         <ul class="list-group list-group-horizontal-md shadow main-list my-5 mx-3">
             <li class="list-group-item li-1 bg-secondary py-3 px-4 px-md-3 py-sm-5 text-wrap">
-                <h2 class="mb-0 py-lg-5 my-lg-0 mt-md-5  slider-header text-wrap"> Our Principle</h2>
+                <h2 class="mb-0 py-lg-1 my-lg-0 mt-md-5  slider-header text-wrap"> Our Principle</h2>
             </li>
-            <li class="list-group-item li-2  py-md-3 px-md-3">
+            <li class="list-group-item li-2  py-md-3 px-md-3 pt-md-3">
                 <div class="row">
                     <div class="col-lg-3 px-0 col-md-12">
                         <img src="./img/list-img-1.png" class="d-block mx-auto">
@@ -187,7 +203,7 @@
                     </div>
                 </div>
             </li>
-            <li class="list-group-item li-3  py-md-3 px-md-3">
+            <li class="list-group-item li-3  py-md-3 px-md-3 pt-md-3">
                 <div class="row">
                     <div class="col-lg-2 px-0 col-md-12">
                         <img src="./img/list-img-3.png" class="d-block mx-auto">
@@ -201,7 +217,7 @@
                     </div>
                 </div>
             </li>
-            <li class="list-group-item li-4  py-md-3 px-md-3">
+            <li class="list-group-item li-4  py-md-3 px-md-3 pt-md-3">
                 <div class="row">
                     <div class="col-lg-2 px-0 col-md-12">
                         <img src="./img/list-img-2.png" class="d-block mx-auto">
@@ -320,7 +336,7 @@
                         </div>
                         <div class="col-9">
                             <h5>Trust the Team</h5>
-                            <p>We believe great teams are built on mutual trust, shared ownership and accountability.
+                            <p class="my-txt-mute">We believe great teams are built on mutual trust, shared ownership and accountability.
                             </p>
                         </div>
                     </div>
@@ -332,7 +348,7 @@
                         </div>
                         <div class="col-9">
                             <h5>A Team Of Professionals</h5>
-                            <p>We believe that diverse backgrounds and experiences make us stronger.</p>
+                            <p class="my-txt-mute">We believe that diverse backgrounds and experiences make us stronger.</p>
                         </div>
                     </div>
                 </div>
@@ -343,7 +359,7 @@
                         </div>
                         <div class="col-9">
                             <h5>Why Choose Us?</h5>
-                            <p>Our integrity, Speedy implementation of transactions, Exceptional returns on investment,
+                            <p class="my-txt-mute">Our integrity, Speedy implementation of transactions, Exceptional returns on investment,
                                 Highly competitive pricing, Proven track record</p>
                         </div>
                     </div>
@@ -354,21 +370,21 @@
 
 
 
-    <!-- Team HillLight -->
-    <section class="team py-5">
-        <div class="container">
-            <h3 class="text-center">Team LightHill</h3>
-            <p class="text-center">Meet the Best Team</p>
-            <div class="d-flex justify-content-around flex-wrap px-5 py-4">
-                <img src="./img/team-1.png" class="rounded-circle team-img-size px-3 py-3" />
-                <img src="./img/team-2.png" class="rounded-circle team-img-size px-3 py-3" />
-                <img src="./img/team-3.png" class="rounded-circle team-img-size px-3 py-3" />
-                <img src="./img/team-4.png" class="rounded-circle team-img-size px-3 p-3" />
+     <!-- Team HillLight -->
+     <section class="team py-5">
+            <div class="container">
+                <h3 class="text-center">Team LightHill</h3>
+                <p class="text-center">Meet the Best Team</p>
+                <div class="d-flex justify-content-center flex-wrap px-5 py-4">
+                    <img src="./img/team-1.png" class="rounded-circle team-img-size px-2 px-md-3 px-lg-4 py-3" />
+                    <img src="./img/team-2.png" class="rounded-circle team-img-size px-2 px-md-3 px-lg-4 py-3" />
+                    <img src="./img/team-3.png" class="rounded-circle team-img-size px-2 px-md-3 px-lg-4 py-3" />
+                    <img src="./img/team-4.png" class="rounded-circle team-img-size px-2 px-md-3 px-lg-4 p-3" />
+                </div>
+                <p class="text-center mt-3 mb-0">Meet the Team LightHill <i class="fas fa-long-arrow-alt-right ml-2"></i>
+                </p>
             </div>
-            <p class="text-center mt-3 mb-0">Meet the Team LightHill <i class="fas fa-long-arrow-alt-right ml-2"></i>
-            </p>
-        </div>
-    </section>
+        </section>
 
     <!-- Success story -->
     <section class="parallax">
@@ -386,7 +402,7 @@
                 </div>
                 <div class="text-center px-4 mb-md-1 mb-4">
                     <h1 class="font-weight-bold">300</h1>
-                    <h5 class="font-weight-bold">New Projectsr</h5>
+                    <h5 class="font-weight-bold">New Projects</h5>
                 </div>
                 <div class="text-center px-4 mb-md-1 mb-4">
                     <h1 class="font-weight-bold">35%</h1>

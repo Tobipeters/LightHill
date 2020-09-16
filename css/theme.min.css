@@ -5,8 +5,8 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
-@import url("https://fonts.googleapis.com/css?family=Rubik:300,400,500,700&amp;display=swap");
-@import url("mmx.css");
+/* @import url("https://fonts.googleapis.com/css?family=Rubik:300,400,500,700&amp;display=swap");
+@import url("mmx.css"); */
 :root {
     --blue: #007bff;
     --indigo: #6610f2;
@@ -35,7 +35,7 @@
     --breakpoint-md: 768px;
     --breakpoint-lg: 992px;
     --breakpoint-xl: 1280px;
-    --font-family-sans-serif: "Rubik", sans-serif;
+    --font-family-sans-serif: "gotham", sans-serif;
     --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
 }
 
@@ -67,7 +67,7 @@ section {
 
 body {
     margin: 0;
-    font-family: "Rubik", sans-serif;
+    font-family: "gotham", sans-serif;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -15590,10 +15590,13 @@ a.badge-shadow:hover {
 }
 
 .gallery-item::before {
+    margin-left: -140px;
+    left: 50%;
+    border-radius: 50%;
     display: block;
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 280px;
+    height: 280px;
     transition: opacity .3s ease-in-out;
     background-color: rgba(43, 52, 69, 0.5);
     content: '';
@@ -15606,18 +15609,19 @@ a.badge-shadow:hover {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 2.875rem;
+    width: fit-content;
+    padding-top:1rem;
     height: 2.875rem;
     margin-top: -1.4375rem;
     margin-left: -1.4375rem;
     -webkit-transform: scale(0.3);
     transform: scale(0.3);
     color: #fff;
-    font-family: 'More Info';
-    font-size: 1.75rem;
+    font-family: "gotham", sans-serif;
+    font-size: .75rem;
     text-align: center;
-    line-height: 2.875rem;
-    content: '\e900';
+    line-height: .875rem;
+    content: 'More Info \2192';
     z-index: 5
 }
 

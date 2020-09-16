@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Lighthill Home</title>
+    <title>Team Lighthill</title>
+
+    <!-- favicon -->
+    <link rel="icon" href="https://lighthillng.com/wp-content/uploads/2018/03/cropped-nG128kEm_400x400-192x192.jpg"
+        sizes="192x192" />
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -23,10 +27,11 @@
 
 <body>
     <!-- Header section -->
+
     <header>
 
         <!-- Topbar-->
-        <div class="topbar text-dark bg-sec">
+        <div class="topbar text-dark bg-sec d-none d-lg-block">
             <div class="container">
                 <div>
                     <div class="topbar-text text-nowrap d-none d-md-inline-block border-left border-light pl-3 ml-3">
@@ -43,11 +48,19 @@
                         </span>
                     </div>
                 </div>
-                <div class="topbar-text  d-md-none ml-auto">
-
-                </div>
-                <div class="d-none d-md-block ml-3 text-nowrap">
-
+                <div class="topbar-text ml-auto">
+                    <div class="top-number d-inline-block mr-4">
+                        <h6 class="mb-1 font-weight-bold">Number 1</h6>
+                        <p class="mb-0">In Lagos</p>
+                    </div>
+                    <div class="top-number d-inline-block mr-4">
+                        <h6 class="mb-1 font-weight-bold">Number 1</h6>
+                        <p class="mb-0">In Currency trading</p>
+                    </div>
+                    <div class="top-number d-inline-block">
+                        <h6 class="mb-1 font-weight-bold">Trusted By</h6>
+                        <p class="mb-0">Several Customers</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -104,9 +117,11 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="contact.html">Contact</a>
                             </li>
-                            <!-- <li class="nav-item">
-                                <a class="nav-link" href="#">Search</a>
-                            </li> -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -116,38 +131,40 @@
                     <div class="collapse navbar-collapse" id="navbarCollapse">
                         <ul class="nav mob-nav">
                             <li class="nav-item">
-                                <a class="nav-link active d-inline-block" href="#">Home</a>
+                                <a class="nav-link active d-inline-block" href="index.html">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link d-inline-block" href="#">About us</a>
+                                <a class="nav-link d-inline-block" href="about.html">About us</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link d-inline-block" href="#">Team LightHill</a>
+                                <a class="nav-link d-inline-block" href="team.html">Team LightHill</a>
                             </li>
                             <li class="nav-item dropdown  d-inline-block">
                                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
                                     aria-haspopup="true" aria-expanded="false">Subsidiaries</a>
                                 <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">LightHill Property</a>
-                                    <a class="dropdown-item" href="#">InsightHills Investment</a>
-                                    <a class="dropdown-item" href="#">Import and Support</a>
-                                    <a class="dropdown-item" href="#">Logistics</a>
-                                    <a class="dropdown-item" href="#">InsightHills BDC/Currency Trading</a>
-                                    <a class="dropdown-item" href="#">Heighthills Agro-Allied</a>
+                                    <a class="dropdown-item" href="property.html">LightHill Property</a>
+                                    <a class="dropdown-item" href="investment.html">InsightHills Investment</a>
+                                    <a class="dropdown-item" href="import.html">Import and Support</a>
+                                    <a class="dropdown-item" href="logistic.html">Logistics</a>
+                                    <a class="dropdown-item" href="trading.html">InsightHills BDC/Currency Trading</a>
+                                    <a class="dropdown-item" href="agro.html">Heighthills Agro-Allied</a>
                                     <a class="dropdown-item" href="#">Logistics</a>
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link  d-inline-block" href="#">Gallery</a>
+                                <a class="nav-link  d-inline-block" href="gallery.html">Gallery</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link d-inline-block" href="#">Blog</a>
+                                <a class="nav-link d-inline-block" href="blog.html">Blog</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link d-inline-block" href="#">Contact</a>
+                                <a class="nav-link d-inline-block" href="contact.html">Contact</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link d-inline-block" href="#">Team LightHill</a>
+                                <a class="nav-link d-inline-block" href="#">
+                                    <i class="fa fa-search"></i>
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -219,23 +236,246 @@
     <!-- Management Team -->
     <section class="py-5 mgt-sect">
         <div class="container">
-            <div class="text-center">
-                <h3 class="font-weight-bold mb-4">Management Team</h3>
+            <div class="text-center mb-5">
+                <h3 class="font-weight-bold mb-3">Management Team</h3>
                 <p class="">INTRODUCING THE BEST TEAM</p>
             </div>
             <div class="">
-                <section class="pb-5 mb-md-2" id="gallery-card">
+                <section class="pb-5 mb-md-2 row justify-content-center" id="gallery-card">
 
-                    <div class="card cz-gallery border-0" style="max-width: 25rem;">
-                        <a class="gallery-item card-img-top"  href="./img/boss.png"  data-sub-html="&lt;h6 class=&quot;font-size-sm text-light&quot;&gt;Gallery image caption&lt;/h6&gt;">
-                            <img src="./img/boss.png" alt="Gallery thumbnail" /></a>
+                    <div class="col-md-4 card cz-gallery border-0 mb-5">
+                        <a class="gallery-item card-img-top" href="./img/team-ceo.jpg"
+                            data-sub-html="&lt;h6 class=&quot;font-size-sm text-light&quot;&gt;Mr. Segun Akinniran. CEO & Managing Director&lt;/h6&gt;">
+
+                            <img src="./img/team-ceo.jpg" alt="Gallery thumbnail"
+                                class="rounded-circle team-img-fit d-block mx-auto" />
+                        </a>
                         <div class="card-body text-center">
-                            <h5 class="card-title">Mr. Segun Akinniran</h5>
-                            <p class="card-text font-size-sm text-muted">CEO & Managing Director.</p>
-                            <small class="text-dark font-weight-light">segunakinniran@lighthillng.com</small>
+                            <h5 class="card-title font-weight-bold">Mr. Segun Akinniran</h5>
+                            <p class="card-text font-size-sm mb-0">CEO & Managing Director.</p>
+                            <i class="fas fa-envelope"></i>
+                            <small class="text-dark font-weight-light d-block">segunakinniran@lighthillng.com</small>
                         </div>
                     </div>
+
+                    <div class="col-md-4 card cz-gallery border-0 mb-5">
+                        <a class="gallery-item card-img-top" href="./img/team-director.jpg"
+                            data-sub-html="&lt;h6 class=&quot;font-size-sm text-light&quot;&gt;Mrs. Toyin Akinniran. Director&lt;/h6&gt;">
+
+                            <img src="./img/team-director.jpg" alt="Gallery thumbnail"
+                                class="rounded-circle team-img-fit d-block mx-auto" />
+                        </a>
+                        <div class="card-body text-center">
+                            <h5 class="card-title font-weight-bold">Mrs. Toyin Akinniran</h5>
+                            <p class="card-text font-size-sm mb-0">Director</p>
+                            <i class="fas fa-envelope"></i>
+                            <small class="text-dark font-weight-light d-block">segunakinniran@lighthillng.com</small>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 card cz-gallery border-0 mb-5">
+                        <a class="gallery-item card-img-top" href="./img/team-gm.jpg"
+                            data-sub-html="&lt;h6 class=&quot;font-size-sm text-light&quot;&gt;Oluwaseun Popoola. General Manager&lt;/h6&gt;">
+
+                            <img src="./img/team-gm.jpg" alt="Gallery thumbnail"
+                                class="rounded-circle team-img-fit d-block mx-auto" />
+                        </a>
+                        <div class="card-body text-center">
+                            <h5 class="card-title font-weight-bold">Oluwaseun Popoola</h5>
+                            <p class="card-text font-size-sm mb-0">General Manager</p>
+                            <i class="fas fa-envelope"></i>
+                            <small class="text-dark font-weight-light d-block">segunakinniran@lighthillng.com</small>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 card cz-gallery border-0 mb-5">
+                        <a class="gallery-item card-img-top" href="./img/team-cfo.jpg"
+                            data-sub-html="&lt;h6 class=&quot;font-size-sm text-light&quot;&gt;Ayeni Martins. CFO&lt;/h6&gt;">
+
+                            <img src="./img/team-cfo.jpg" alt="Gallery thumbnail"
+                                class="rounded-circle team-img-fit d-block mx-auto" />
+                        </a>
+                        <div class="card-body text-center">
+                            <h5 class="card-title font-weight-bold">Ayeni Martins</h5>
+                            <p class="card-text font-size-sm mb-0">CFO</p>
+                            <i class="fas fa-envelope"></i>
+                            <small class="text-dark font-weight-light d-block">ayenimartins@lighthillng.com</small>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 card cz-gallery border-0 mb-5">
+                        <a class="gallery-item card-img-top" href="./img/team-md.jpg"
+                            data-sub-html="&lt;h6 class=&quot;font-size-sm text-light&quot;&gt;Oladipo Kayode. MD Insighthills BDC/Currency Trading&lt;/h6&gt;">
+
+                            <img src="./img/team-md.jpg" alt="Gallery thumbnail"
+                                class="rounded-circle team-img-fit d-block mx-auto" />
+                        </a>
+                        <div class="card-body text-center">
+                            <h5 class="card-title font-weight-bold">Oladipo Kayode</h5>
+                            <p class="card-text font-size-sm mb-0">MD Insighthills BDC/Currency Trading</p>
+                            <i class="fas fa-envelope"></i>
+                            <small class="text-dark font-weight-light d-block">oladipokayode@lighthillng.com</small>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 card cz-gallery border-0 mb-5">
+                        <a class="gallery-item card-img-top" href="./img/team-md-a.jpg"
+                            data-sub-html="&lt;h6 class=&quot;font-size-sm text-light&quot;&gt;Adeola Idowu. MD, HeightHills Agro-Allied&lt;/h6&gt;">
+
+                            <img src="./img/team-md-a.jpg" alt="Gallery thumbnail"
+                                class="rounded-circle team-img-fit d-block mx-auto" />
+                        </a>
+                        <div class="card-body text-center">
+                            <h5 class="card-title font-weight-bold">Adeola Idowu</h5>
+                            <p class="card-text font-size-sm mb-0">MD, HeightHills Agro-Allied</p>
+                            <i class="fas fa-envelope"></i>
+                            <small class="text-dark font-weight-light d-block">adeolaidowu@lighthillng.com</small>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 card cz-gallery border-0 mb-5">
+                        <a class="gallery-item card-img-top" href="./img/team-md-i.jpg"
+                            data-sub-html="&lt;h6 class=&quot;font-size-sm text-light&quot;&gt;Mudiaga Imarah MD, Insighthills Invesment&lt;/h6&gt;">
+
+                            <img src="./img/team-md-i.jpg" alt="Gallery thumbnail"
+                                class="rounded-circle team-img-fit d-block mx-auto" />
+                        </a>
+                        <div class="card-body text-center">
+                            <h5 class="card-title font-weight-bold">Mudiaga Imarah</h5>
+                            <p class="card-text font-size-sm mb-0">MD, Insighthills Invesment</p>
+                            <i class="fas fa-envelope"></i>
+                            <small class="text-dark font-weight-light d-block">mudiimarah@lighthillng.com</small>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 card cz-gallery border-0 mb-5">
+                        <a class="gallery-item card-img-top" href="./img/team-md-log.jpg"
+                            data-sub-html="&lt;h6 class=&quot;font-size-sm text-light&quot;&gt;Bolaji Oladunjoye. MD, Lighthills Logistics&lt;/h6&gt;">
+
+                            <img src="./img/team-md-log.jpg" alt="Gallery thumbnail"
+                                class="rounded-circle team-img-fit d-block mx-auto" />
+                        </a>
+                        <div class="card-body text-center">
+                            <h5 class="card-title font-weight-bold">Bolaji Oladunjoye</h5>
+                            <p class="card-text font-size-sm mb-0">MD, Lighthills Logistics</p>
+                            <i class="fas fa-envelope"></i>
+                            <small class="text-dark font-weight-light d-block">oladunjoyekamoru@lighthillng.com</small>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 card cz-gallery border-0 mb-5">
+                        <a class="gallery-item card-img-top" href="./img/team-fac.jpg"
+                            data-sub-html="&lt;h6 class=&quot;font-size-sm text-light&quot;&gt;Olusegun Idowu. Facilitator&lt;/h6&gt;">
+
+                            <img src="./img/team-fac.jpg" alt="Gallery thumbnail"
+                                class="rounded-circle team-img-fit d-block mx-auto" />
+                        </a>
+                        <div class="card-body text-center">
+                            <h5 class="card-title font-weight-bold">Olusegun Idowu</h5>
+                            <p class="card-text font-size-sm mb-0">Facilitator</p>
+                            <i class="fas fa-envelope"></i>
+                            <small class="text-dark font-weight-light d-block">segunidowu@bestbridge.com</small>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 card cz-gallery border-0 mb-5">
+                        <a class="gallery-item card-img-top" href="./img/team-fac-2.jpg"
+                            data-sub-html="&lt;h6 class=&quot;font-size-sm text-light&quot;&gt;David Thomas. Facilitator&lt;/h6&gt;">
+
+                            <img src="./img/team-fac-2.jpg" alt="Gallery thumbnail"
+                                class="rounded-circle team-img-fit d-block mx-auto" />
+                        </a>
+                        <div class="card-body text-center">
+                            <h5 class="card-title font-weight-bold">David Thomas</h5>
+                            <p class="card-text font-size-sm mb-0">Facilitator</p>
+                            <!-- <i class="fas fa-envelope"></i>
+                            <small class="text-dark font-weight-light d-block">segunidowu@bestbridge.com</small> -->
+                        </div>
+                    </div>
+
                 </section>
+            </div>
+        </div>
+    </section>
+
+    <!-- Board of directors -->
+    <section class="py-5 bg-sec">
+        <div class="container">
+            <h3 class="font-weight-bold mb-5 text-center">Board of Directors</h3>
+            <div class="pb-5 mb-md-2 row justify-content-center" id="gallery-card">
+
+                <div class="col-md-4 card bg-sec cz-gallery border-0 mb-5">
+                    <a class="gallery-item card-img-top" href="./img/team-ceo.jpg"
+                        data-sub-html="&lt;h6 class=&quot;font-size-sm text-light&quot;&gt;Mr. Segun Akinniran. CEO & Managing Director&lt;/h6&gt;">
+
+                        <img src="./img/team-ceo.jpg" alt="Gallery thumbnail"
+                            class="rounded-circle team-img-fit d-block mx-auto" />
+                    </a>
+                    <div class="card-body text-center">
+                        <h5 class="card-title font-weight-bold">Mr. Segun Akinniran</h5>
+                        <p class="card-text font-size-sm mb-0">CEO & Managing Director.</p>
+                        <i class="fas fa-envelope"></i>
+                        <small class="text-dark font-weight-light d-block">segunakinniran@lighthillng.com</small>
+                    </div>
+                </div>
+
+                <div class="col-md-4 card bg-sec cz-gallery border-0 mb-5">
+                    <a class="gallery-item card-img-top" href="./img/team-bod-1.jpg"
+                        data-sub-html="&lt;h6 class=&quot;font-size-sm text-light&quot;&gt;OMOTUNDE OLASUKANMI. Member of BOD&lt;/h6&gt;">
+
+                        <img src="./img/team-bod-1.jpg" alt="Gallery thumbnail"
+                            class="rounded-circle team-img-fit d-block mx-auto" />
+                    </a>
+                    <div class="card-body text-center">
+                        <h5 class="card-title font-weight-bold">OMOTUNDE OLASUKANMI</h5>
+                        <p class="card-text font-size-sm mb-0">Member, BOD</p>
+                        <!-- <i class="fas fa-envelope"></i>
+                    <small class="text-dark font-weight-light d-block">segunakinniran@lighthillng.com</small> -->
+                    </div>
+                </div>
+
+                <div class="col-md-4 card bg-sec cz-gallery border-0 mb-5">
+                    <a class="gallery-item card-img-top" href="./img/team-bod-2.jpg"
+                        data-sub-html="&lt;h6 class=&quot;font-size-sm text-light&quot;&gt;TAIWO AYENI. Member of BOD&lt;/h6&gt;">
+
+                        <img src="./img/team-bod-2.jpg" alt="Gallery thumbnail"
+                            class="rounded-circle team-img-fit d-block mx-auto" />
+                    </a>
+                    <div class="card-body text-center">
+                        <h5 class="card-title font-weight-bold">TAIWO AYENI</h5>
+                        <p class="card-text font-size-sm mb-0">Member of BOD</p>
+                        <!-- <i class="fas fa-envelope"></i>
+                    <small class="text-dark font-weight-light d-block">segunakinniran@lighthillng.com</small> -->
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Success story -->
+    <section class="py-5">
+        <div class="container">
+            <h3 class="pt-5 text-center font-weight-bold">Our Success Stories</h3>
+            <p class="text-center mb-5">What we have done</p>
+            <div class="d-flex justify-content-around mx-auto flex-wrap py-3">
+                <div class="text-center px-4 mb-md-1 mb-4">
+                    <h1 class="font-weight-bold">10000</h1>
+                    <h5 class="font-weight-bold">All Time Clients</h5>
+                </div>
+                <div class="text-center px-4 mb-md-1 mb-4">
+                    <h1 class="font-weight-bold">979</h1>
+                    <h5 class="font-weight-bold">Clients in This Year</h5>
+                </div>
+                <div class="text-center px-4 mb-md-1 mb-4">
+                    <h1 class="font-weight-bold">300</h1>
+                    <h5 class="font-weight-bold">New Projects</h5>
+                </div>
+                <div class="text-center px-4 mb-md-1 mb-4">
+                    <h1 class="font-weight-bold">35%</h1>
+                    <h5 class="font-weight-bold">Avg Profit Increased</h5>
+                </div>
             </div>
         </div>
     </section>

@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Lighthill Home</title>
+    <title>Lighthill Gallery</title>
+
+    <!-- favicon -->
+    <link rel="icon" href="https://lighthillng.com/wp-content/uploads/2018/03/cropped-nG128kEm_400x400-192x192.jpg"
+        sizes="192x192" />
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -19,14 +23,20 @@
     <!-- Font Awesome link -->
     <link rel="stylesheet" href="./font/css/all.css">
     <script defer src="./font/js/all.js"></script>
+
+    <!-- Light Gallery.js -->
+    <link type="text/css" rel="stylesheet" href="css/lightgallery.css" />
+    <!-- Ligt gallery.js -->
+    <script src="js/lightgallery.min.js"></script>
 </head>
 
 <body>
     <!-- Header section -->
+
     <header>
 
         <!-- Topbar-->
-        <div class="topbar text-dark bg-sec">
+        <div class="topbar text-dark bg-sec d-none d-lg-block">
             <div class="container">
                 <div>
                     <div class="topbar-text text-nowrap d-none d-md-inline-block border-left border-light pl-3 ml-3">
@@ -43,11 +53,19 @@
                         </span>
                     </div>
                 </div>
-                <div class="topbar-text  d-md-none ml-auto">
-
-                </div>
-                <div class="d-none d-md-block ml-3 text-nowrap">
-
+                <div class="topbar-text ml-auto">
+                    <div class="top-number d-inline-block mr-4">
+                        <h6 class="mb-1 font-weight-bold">Number 1</h6>
+                        <p class="mb-0">In Lagos</p>
+                    </div>
+                    <div class="top-number d-inline-block mr-4">
+                        <h6 class="mb-1 font-weight-bold">Number 1</h6>
+                        <p class="mb-0">In Currency trading</p>
+                    </div>
+                    <div class="top-number d-inline-block">
+                        <h6 class="mb-1 font-weight-bold">Trusted By</h6>
+                        <p class="mb-0">Several Customers</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -104,9 +122,11 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="contact.html">Contact</a>
                             </li>
-                            <!-- <li class="nav-item">
-                                <a class="nav-link" href="#">Search</a>
-                            </li> -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -122,32 +142,34 @@
                                 <a class="nav-link d-inline-block" href="about.html">About us</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link d-inline-block" href="#">Team LightHill</a>
+                                <a class="nav-link d-inline-block" href="team.html">Team LightHill</a>
                             </li>
                             <li class="nav-item dropdown  d-inline-block">
                                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
                                     aria-haspopup="true" aria-expanded="false">Subsidiaries</a>
                                 <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">LightHill Property</a>
-                                    <a class="dropdown-item" href="#">InsightHills Investment</a>
-                                    <a class="dropdown-item" href="#">Import and Support</a>
-                                    <a class="dropdown-item" href="#">Logistics</a>
-                                    <a class="dropdown-item" href="#">InsightHills BDC/Currency Trading</a>
-                                    <a class="dropdown-item" href="#">Heighthills Agro-Allied</a>
+                                    <a class="dropdown-item" href="property.html">LightHill Property</a>
+                                    <a class="dropdown-item" href="investment.html">InsightHills Investment</a>
+                                    <a class="dropdown-item" href="import.html">Import and Support</a>
+                                    <a class="dropdown-item" href="logistic.html">Logistics</a>
+                                    <a class="dropdown-item" href="trading.html">InsightHills BDC/Currency Trading</a>
+                                    <a class="dropdown-item" href="agro.html">Heighthills Agro-Allied</a>
                                     <a class="dropdown-item" href="#">Logistics</a>
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link  d-inline-block" href="#">Gallery</a>
+                                <a class="nav-link  d-inline-block" href="gallery.html">Gallery</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link d-inline-block" href="#">Blog</a>
+                                <a class="nav-link d-inline-block" href="blog.html">Blog</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link d-inline-block" href="#">Contact</a>
+                                <a class="nav-link d-inline-block" href="contact.html">Contact</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link d-inline-block" href="#">Team LightHill</a>
+                                <a class="nav-link d-inline-block" href="#">
+                                    <i class="fa fa-search"></i>
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -157,88 +179,89 @@
     </header>
 
 
-
-    <!--About section-->
+    <!--Team Main-->
     <section class="p-5 main-bg">
         <div class="container py-xl-2 mb-5">
             <div class=" text-center px-2 py-5 px-md-5">
-                <h2 class="mb-4 py-5 slider-header">LightHill Blog</h2>
+                <h2 class="mb-4 slider-header">Gallery</h2>
             </div>
         </div>
     </section>
 
 
 
-    <!-- what you need to know -->
-    <section class="py-5 blog-section bg-sec">
+    <!-- Management Team -->
+    <section class="py-1 py-lg-5">
         <div class="container">
-            <div class="row">
-                <div class="col-md-4 my-3">
-                    <div class="card lighthill-card shadow">
-                        <div class="card-img-top card-img-height">
-                            <img src="./img/para-img.png" alt="Blog Image" />
-                        </div>
-                        <div class="card-body py-5">
-                            <small class="text-green d-block mb-3">September 14, 2020</small>
-                            <div class="text-muted">
-                                    <small class="d-inline-block mr-3"><i class="fas fa-file mr-2"></i> LightHill</small>
-                                    <small class="d-inline-block mr-3"><i class="fas fa-folder-open mr-2"></i> Blog</small>
-                                    <small class="d-inline-block mr-3"><i class="fas fa-comment-alt mr-2"></i>0 Comment</small>
-                            </div>
-                            <h5 class="card-title mt-3">US CORE PCE PRICE INDEX</h5>
-                            <small class="card-text font-size-sm text-muted d-block">
-                                The Core PCE price Index is the less volatile measure of the PCE price index which excludes the more volatile and seasonal food and energy prices...
-
-                            </small>
-
-                            <a class="text-dark-blue mt-4 font-weight-bold d-block" href="#">View more Info <i class="fas fa-long-arrow-alt-right ml-2"></i></a>
-                        </div>
-                    </div>
+            <div class="text-center mb-5">
+                <h3 class="font-weight-bold mb-3">Hills Gallery</h3>
+                <p class="">Welcome to our World</p>
+            </div>
+            <div class="row cz-gallery">
+                <div class="col-xl-4 col-sm-6 mb-grid-gutter ">
+                    <a class="gallery-item gallery-img shadow" href="./img/gallery-1.jpg"
+                        data-sub-html="&lt;h6 class=&quot;font-size-sm text-light&quot;&gt;Hills Gallery #1&lt;/h6&gt;">
+                        <img src="./img/gallery-1.jpg" alt="Gallery thumbnail" />
+                        <span class="gallery-item-caption">Hills Gallery #1</span>
+                    </a>
                 </div>
-                <div class="col-md-4 my-3">
-                        <div class="card lighthill-card shadow">
-                            <div class="card-img-top card-img-height">
-                                <img src="./img/blog-img-2.jpg" alt="Blog Image" />
-                            </div>
-                            <div class="card-body py-5">
-                                <small class="text-green d-block mb-3">September 14, 2020</small>
-                                <div class="text-muted">
-                                        <small class="d-inline-block mr-3"><i class="fas fa-file mr-2"></i> LightHill</small>
-                                        <small class="d-inline-block mr-3"><i class="fas fa-folder-open mr-2"></i> Blog</small>
-                                        <small class="d-inline-block mr-3"><i class="fas fa-comment-alt mr-2"></i>0 Comment</small>
-                                </div>
-                                <h5 class="card-title mt-3">US CORE PCE PRICE INDEX</h5>
-                                <small class="card-text font-size-sm text-muted d-block">
-                                    The Core PCE price Index is the less volatile measure of the PCE price index which excludes the more volatile and seasonal food and energy prices...
-    
-                                </small>
-    
-                                <a class="text-dark-blue mt-4 font-weight-bold d-block" href="#">View more Info <i class="fas fa-long-arrow-alt-right ml-2"></i></a>
-                            </div>
-                        </div>
+
+                <div class="col-xl-4 col-sm-6 mb-grid-gutter ">
+                    <a class="gallery-item gallery-img shadow" href="./img/gallery-2.jpg"
+                        data-sub-html="&lt;h6 class=&quot;font-size-sm text-light&quot;&gt;Hills Gallery #2&lt;/h6&gt;">
+                        <img src="./img/gallery-2.jpg" alt="Gallery thumbnail" />
+                        <span class="gallery-item-caption">Hills Gallery #2</span>
+                    </a>
+                </div>
+
+                <div class="col-xl-4 col-sm-6 mb-grid-gutter ">
+                    <a class="gallery-item gallery-img shadow" href="./img/gallery-3.jpg"
+                        data-sub-html="&lt;h6 class=&quot;font-size-sm text-light&quot;&gt;Hills Gallery #3&lt;/h6&gt;">
+                        <img src="./img/gallery-3.jpg" alt="Gallery thumbnail" />
+                        <span class="gallery-item-caption">Hills Gallery #3</span>
+                    </a>
+                </div>
+
+                <div class="col-xl-4 col-sm-6 mb-grid-gutter ">
+                    <a class="gallery-item gallery-img shadow" href="./img/gallery-4.jpg"
+                        data-sub-html="&lt;h6 class=&quot;font-size-sm text-light&quot;&gt;Hills Gallery #4&lt;/h6&gt;">
+                        <img src="./img/gallery-4.jpg" alt="Gallery thumbnail" />
+                        <span class="gallery-item-caption">Hills Gallery #4</span>
+                    </a>
+                </div>
+
+                <div class="col-xl-4 col-sm-6 mb-grid-gutter ">
+                    <a class="gallery-item gallery-img shadow" href="./img/gallery-5.jpg"
+                        data-sub-html="&lt;h6 class=&quot;font-size-sm text-light&quot;&gt;Hills Gallery #5&lt;/h6&gt;">
+                        <img src="./img/gallery-5.jpg" alt="Gallery thumbnail" />
+                        <span class="gallery-item-caption">Hills Gallery #5</span>
+                    </a>
+                </div>
+
+                <div class="col-xl-4 col-sm-6 mb-grid-gutter ">
+                    <a class="gallery-item gallery-img shadow" href="./img/gallery-6.jpg"
+                        data-sub-html="&lt;h6 class=&quot;font-size-sm text-light&quot;&gt;Hills Gallery #6&lt;/h6&gt;">
+                        <img src="./img/gallery-6.jpg" alt="Gallery thumbnail" />
+                        <span class="gallery-item-caption">Hills Gallery #6</span>
+                    </a>
+                </div>
+
+                <div class="col-xl-4 col-sm-6 mb-grid-gutter ">
+                    <a class="gallery-item gallery-img shadow " href="./img/gallery-7.jpg"
+                        data-sub-html="&lt;h6 class=&quot;font-size-sm text-light&quot;&gt;Hills Gallery #7&lt;/h6&gt;">
+                        <img src="./img/gallery-7.jpg" alt="Gallery thumbnail" />
+                        <span class="gallery-item-caption">Hills Gallery #7</span>
+                    </a>
+                </div>
+
+                <div class="col-xl-4 col-sm-6 mb-grid-gutter">
+                        <a class="gallery-item gallery-img shadow" href="./img/gallery-8.jpg"
+                            data-sub-html="&lt;h6 class=&quot;font-size-sm text-light&quot;&gt;Hills Gallery #8&lt;/h6&gt;">
+                            <img src="./img/gallery-8.jpg" alt="Gallery thumbnail" />
+                            <span class="gallery-item-caption">Hills Gallery #8</span>
+                        </a>
                     </div>
-                    <div class="col-md-4 my-3">
-                            <div class="card lighthill-card shadow">
-                                <div class="card-img-top card-img-height">
-                                    <img src="./img/blog-img-1.png" alt="Blog Image" />
-                                </div>
-                                <div class="card-body py-5">
-                                    <small class="text-green d-block mb-3">September 14, 2020</small>
-                                    <div class="text-muted">
-                                            <small class="d-inline-block mr-3"><i class="fas fa-file mr-2"></i> LightHill</small>
-                                            <small class="d-inline-block mr-3"><i class="fas fa-folder-open mr-2"></i> Blog</small>
-                                            <small class="d-inline-block mr-3"><i class="fas fa-comment-alt mr-2"></i>0 Comment</small>
-                                    </div>
-                                    <h5 class="card-title mt-3">US CORE PCE PRICE INDEX</h5>
-                                    <small class="card-text font-size-sm text-muted d-block">
-                                        The Core PCE price Index is the less volatile measure of the PCE price index which excludes the more volatile and seasonal food and energy prices...
-        
-                                    </small>
-        
-                                    <a class="text-dark-blue mt-4 font-weight-bold d-block" href="#">View more Info <i class="fas fa-long-arrow-alt-right ml-2"></i></a>
-                                </div>
-                            </div>
-                        </div>
+
             </div>
         </div>
     </section>
@@ -246,10 +269,10 @@
 
 
     <!-- Success story -->
-    <section class="parallax">
+    <section class="py-5">
         <div class="container">
-            <h3 class="pt-5 text-center">Our Success Stories</h3>
-            <p class="text-center">What we have done</p>
+            <h3 class="pt-5 text-center font-weight-bold">Our Success Stories</h3>
+            <p class="text-center mb-5">What we have done</p>
             <div class="d-flex justify-content-around mx-auto flex-wrap py-3">
                 <div class="text-center px-4 mb-md-1 mb-4">
                     <h1 class="font-weight-bold">10000</h1>
@@ -261,7 +284,7 @@
                 </div>
                 <div class="text-center px-4 mb-md-1 mb-4">
                     <h1 class="font-weight-bold">300</h1>
-                    <h5 class="font-weight-bold">New Projectsr</h5>
+                    <h5 class="font-weight-bold">New Projects</h5>
                 </div>
                 <div class="text-center px-4 mb-md-1 mb-4">
                     <h1 class="font-weight-bold">35%</h1>
@@ -270,6 +293,8 @@
             </div>
         </div>
     </section>
+
+
 
     <!-- Footer -->
     <footer>
@@ -404,27 +429,23 @@
         </div>
     </footer>
 
-
     <!-- Script section -->
     <script src="./js/vendor.min.js"></script>
     <script src="./js/theme.min.js"></script>
 
-    <!-- Google map -->
+
+
+    <!-- lightgallery plugins -->
+    <script src="js/lg-thumbnail.min.js"></script>
+    <script src="js/lg-fullscreen.min.js"></script>
+
     <script>
-        // Initialize and add the map
-        function initMap() {
-            // The location of Uluru
-            var uluru = { lat: -25.344, lng: 131.036 };
-            // The map, centered at Uluru
-            var map = new google.maps.Map(
-                document.getElementById('map'), { zoom: 4, center: uluru });
-            // The marker, positioned at Uluru
-            var marker = new google.maps.Marker({ position: uluru, map: map });
-        }
+        lightGallery(document.getElementById('aniimated-thumbnials'), {
+            thumbnail: true
+        }); 
     </script>
-    <script defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCiB8XzBXvEHb0nSrdkKo-T6kdsjfkWcd8&callback=initMap">
-        </script>
+
+
 </body>
 
 </html>

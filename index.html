@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Lighthill Home</title>
+    <!-- favicon -->
+    <link rel="icon" href="https://lighthillng.com/wp-content/uploads/2018/03/cropped-nG128kEm_400x400-192x192.jpg"
+        sizes="192x192" />
+
+    <!-- Font type -->
+    <link
+        rel="https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css">
+
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -26,7 +34,7 @@
     <header>
 
         <!-- Topbar-->
-        <div class="topbar text-dark bg-sec">
+        <div class="topbar text-dark bg-sec d-none d-lg-block">
             <div class="container">
                 <div>
                     <div class="topbar-text text-nowrap d-none d-md-inline-block border-left border-light pl-3 ml-3">
@@ -43,11 +51,19 @@
                         </span>
                     </div>
                 </div>
-                <div class="topbar-text  d-md-none ml-auto">
-
-                </div>
-                <div class="d-none d-md-block ml-3 text-nowrap">
-
+                <div class="topbar-text ml-auto">
+                    <div class="top-number d-inline-block mr-4">
+                        <h6 class="mb-1 font-weight-bold">Number 1</h6>
+                        <p class="mb-0">In Lagos</p>
+                    </div>
+                    <div class="top-number d-inline-block mr-4">
+                        <h6 class="mb-1 font-weight-bold">Number 1</h6>
+                        <p class="mb-0">In Currency trading</p>
+                    </div>
+                    <div class="top-number d-inline-block">
+                        <h6 class="mb-1 font-weight-bold">Trusted By</h6>
+                        <p class="mb-0">Several Customers</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -104,9 +120,11 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="contact.html">Contact</a>
                             </li>
-                            <!-- <li class="nav-item">
-                                <a class="nav-link" href="#">Search</a>
-                            </li> -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -116,38 +134,40 @@
                     <div class="collapse navbar-collapse" id="navbarCollapse">
                         <ul class="nav mob-nav">
                             <li class="nav-item">
-                                <a class="nav-link active d-inline-block" href="#">Home</a>
+                                <a class="nav-link active d-inline-block" href="index.html">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link d-inline-block" href="#">About us</a>
+                                <a class="nav-link d-inline-block" href="about.html">About us</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link d-inline-block" href="#">Team LightHill</a>
+                                <a class="nav-link d-inline-block" href="team.html">Team LightHill</a>
                             </li>
                             <li class="nav-item dropdown  d-inline-block">
                                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
                                     aria-haspopup="true" aria-expanded="false">Subsidiaries</a>
                                 <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">LightHill Property</a>
-                                    <a class="dropdown-item" href="#">InsightHills Investment</a>
-                                    <a class="dropdown-item" href="#">Import and Support</a>
-                                    <a class="dropdown-item" href="#">Logistics</a>
-                                    <a class="dropdown-item" href="#">InsightHills BDC/Currency Trading</a>
-                                    <a class="dropdown-item" href="#">Heighthills Agro-Allied</a>
+                                    <a class="dropdown-item" href="property.html">LightHill Property</a>
+                                    <a class="dropdown-item" href="investment.html">InsightHills Investment</a>
+                                    <a class="dropdown-item" href="import.html">Import and Support</a>
+                                    <a class="dropdown-item" href="logistic.html">Logistics</a>
+                                    <a class="dropdown-item" href="trading.html">InsightHills BDC/Currency Trading</a>
+                                    <a class="dropdown-item" href="agro.html">Heighthills Agro-Allied</a>
                                     <a class="dropdown-item" href="#">Logistics</a>
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link  d-inline-block" href="#">Gallery</a>
+                                <a class="nav-link  d-inline-block" href="gallery.html">Gallery</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link d-inline-block" href="#">Blog</a>
+                                <a class="nav-link d-inline-block" href="blog.html">Blog</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link d-inline-block" href="#">Contact</a>
+                                <a class="nav-link d-inline-block" href="contact.html">Contact</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link d-inline-block" href="#">Team LightHill</a>
+                                <a class="nav-link d-inline-block" href="#">
+                                    <i class="fa fa-search"></i>
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -165,8 +185,23 @@
                 <!-- Slider     -->
                 <div class="col-xl-12 order-xl-2">
                     <section class="cz-carousel cz-controls-lg main-slider ">
-                        <div class="cz-carousel-inner"
-                            data-carousel-options="{&quot;mode&quot;: &quot;gallery&quot;, &quot;responsive&quot;: {&quot;0&quot;:{&quot;nav&quot;:true, &quot;controls&quot;: true},&quot;992&quot;:{&quot;nav&quot;:true, &quot;controls&quot;: false}}}">
+                        <div class="cz-carousel-inner" data-carousel-options="{
+                                &quot;mode&quot;: &quot;gallery&quot;, 
+                                &quot;autoplay&quot;: true, 
+                                &quot;responsive&quot;: 
+                                    {
+                                        &quot;0&quot;:
+                                            {
+                                                &quot;nav&quot;:true, 
+                                                &quot;controls&quot;: true
+                                            },
+                                        &quot;992&quot;:
+                                        {
+                                            &quot;nav&quot;:true, 
+                                            &quot;controls&quot;: false
+                                        }
+                                    }
+                                }">
                             <!-- Item-->
                             <div>
                                 <div class="row">
@@ -209,7 +244,7 @@
                                             alt="Women Sportswear">
                                     </div>
                                 </div>
-                            </div> 
+                            </div>
                         </div>
                     </section>
                 </div>
@@ -262,7 +297,7 @@
                 </div>
             </li>
         </ul>
-    </div> 
+    </div>
 
     <!-- Subsidiaries of lighthill section -->
 
@@ -271,7 +306,7 @@
             <div class="col-lg-5 col-md-12">
                 <div class="pr-lg-4 subsidiary-container">
                     <h3 class="mb-4">Subsidiaries of LightHill Group</h3>
-                    <p>
+                    <p class="">
                         But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain
                         was born and I will give you a complete account of the system, and expound the actual teachings
                         of the great explorer of the truth, the master-builder of human happiness. No one rejects,
@@ -311,7 +346,7 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="rounded-circle py-5 px-3 text-center align-middle d-block mx-auto circle-4">
+                        <div class="rounded-circle px-3 text-center align-middle d-block mx-auto circle-4">
                             <img src="./img/circle-logo.png" width="200px" height="200px">
                         </div>
                     </div>
@@ -408,7 +443,7 @@
                 </div>
                 <div class="text-center px-4 mb-md-1 mb-4">
                     <h1 class="font-weight-bold">300</h1>
-                    <h5 class="font-weight-bold">New Projectsr</h5>
+                    <h5 class="font-weight-bold">New Projects</h5>
                 </div>
                 <div class="text-center px-4 mb-md-1 mb-4">
                     <h1 class="font-weight-bold">35%</h1>
@@ -447,7 +482,7 @@
 
             <div class="row py-4">
                 <div class="col-md-6 border-right">
-                    <div class="text-center text-md-right d-block ml-auto w-auto w-md-50 tes-container">
+                    <div class="text-center text-md-right d-block ml-0 ml-md-auto w-auto w-md-50 tes-container">
                         <div class="star-rating py-2">
                             <i class="fa fa-star active"></i>
                             <i class="fa fa-star active"></i>
@@ -475,92 +510,125 @@
     <!-- Testimonies section -->
     <section class="all-testimonies">
         <div class="container py-5">
-            <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0 border-right border-md-right-0">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <img src="./img/anony-avatar.png" width="50" height="50"
-                                class="rounded-circle d-block mx-auto mb-3 " />
-                        </div>
-                        <div class="col-md-9">
-                            <div class="card shadow">
-                                <div class="card-body">
-                                    <div class="star-rating">
-                                        <i class="fa fa-star active"></i>
-                                        <i class="fa fa-star active"></i>
-                                        <i class="fa fa-star active"></i>
-                                        <i class="fa fa-star active"></i>
-                                        <i class="fa fa-star active"></i>
+            <!-- <div class="row"> -->
+                <section class="cz-carousel cz-controls-lg all-testimonies">
+                    <div class="cz-carousel-inner" data-carousel-options="{
+                                    &quot;mode&quot;: &quot;gallery&quot;, 
+                                    &quot;autoplay&quot;: true, 
+                                    &quot;responsive&quot;: 
+                                        {
+                                            &quot;0&quot;:
+                                                {
+                                                    &quot;items&quot;:1,
+                                                    &quot;nav&quot;:true, 
+                                                    &quot;controls&quot;: true
+                                                },
+                                            &quot;892&quot;:
+                                            {
+                                                &quot;items&quot;:3,
+                                                &quot;nav&quot;:true, 
+                                                &quot;controls&quot;: true
+                                            }
+                                        }
+                                    }">
+                        <div>
+                            <div class="card mr-0 mr-md-4 mb-4 mb-lg-0 border-0">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img src="./img/anony-avatar.png" width="50" height="50"
+                                            class="rounded-circle d-block mx-auto mb-3 " />
                                     </div>
-                                    <p class="mb-0 pt-3">Great response time when selling and buying currency. I have
-                                        not been
-                                        disappointed.
-                                    </p>
-                                    <h6 class="mt-4 mb-0">Adewale Sobayo</h6>
-                                    <small class="text-green">CFO, Means Tech</small>
+                                    <div class="col-md-9">
+                                        <div class="card shadow bg-light">
+                                            <div class="card-body">
+                                                <div class="star-rating">
+                                                    <i class="fa fa-star active"></i>
+                                                    <i class="fa fa-star active"></i>
+                                                    <i class="fa fa-star active"></i>
+                                                    <i class="fa fa-star active"></i>
+                                                    <i class="fa fa-star active"></i>
+                                                </div>
+                                                <p class="mb-0 pt-3">Great response time when selling and buying
+                                                    currency. I
+                                                    have
+                                                    not been
+                                                    disappointed.
+                                                </p>
+                                                <h6 class="mt-4 mb-0">Adewale Sobayo</h6>
+                                                <small class="text-green">CFO, Means Tech</small>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0 border-right border-md-right-0">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <img src="./img/anony-avatar.png" width="50" height="50"
-                                class="rounded-circle d-block mx-auto mb-3" />
-                        </div>
-                        <div class="col-md-9">
-                            <div class="card shadow">
-                                <div class="card-body">
-                                    <div class="star-rating">
-                                        <i class="fa fa-star active"></i>
-                                        <i class="fa fa-star active"></i>
-                                        <i class="fa fa-star active"></i>
-                                        <i class="fa fa-star active"></i>
-                                        <i class="fa fa-star active"></i>
+                        <div>
+                            <div class="card mr-0 mr-md-4 mb-4 mb-lg-0 border-0">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img src="./img/anony-avatar.png" width="50" height="50"
+                                            class="rounded-circle d-block mx-auto mb-3" />
                                     </div>
-                                    <p class="mb-0 pt-3">Great response time when selling and buying currency. I have
-                                        not been
-                                        disappointed.
-                                    </p>
-                                    <h6 class="mt-4 mb-0">Adewale Sobayo</h6>
-                                    <small class="text-green">CFO, Means Tech</small>
+                                    <div class="col-md-9">
+                                        <div class="card shadow bg-light">
+                                            <div class="card-body">
+                                                <div class="star-rating">
+                                                    <i class="fa fa-star active"></i>
+                                                    <i class="fa fa-star active"></i>
+                                                    <i class="fa fa-star active"></i>
+                                                    <i class="fa fa-star active"></i>
+                                                    <i class="fa fa-star active"></i>
+                                                </div>
+                                                <p class="mb-0 pt-3">Great response time when selling and buying
+                                                    currency. I
+                                                    have
+                                                    not been
+                                                    disappointed.
+                                                </p>
+                                                <h6 class="mt-4 mb-0">Adewale Sobayo</h6>
+                                                <small class="text-green">CFO, Means Tech</small>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
 
-                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0 border-right border-md-right-0">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <img src="./img/anony-avatar.png" width="50" height="50"
-                                class="rounded-circle d-block mx-auto mb-3" />
-                        </div>
-                        <div class="col-md-9">
-                            <div class="card shadow">
-                                <div class="card-body">
-                                    <div class="star-rating">
-                                        <i class="fa fa-star active"></i>
-                                        <i class="fa fa-star active"></i>
-                                        <i class="fa fa-star active"></i>
-                                        <i class="fa fa-star active"></i>
-                                        <i class="fa fa-star active"></i>
+                        <div>
+                            <div class="card mr-0 mr-md-4 mb-4 mb-lg-0 border-0">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img src="./img/anony-avatar.png" width="50" height="50"
+                                            class="rounded-circle d-block mx-auto mb-3" />
                                     </div>
-                                    <p class="mb-0 pt-3">Great response time when selling and buying currency. I have
-                                        not been
-                                        disappointed.
-                                    </p>
-                                    <h6 class="mt-4 mb-0">Adewale Sobayo</h6>
-                                    <small class="text-green">CFO, Means Tech</small>
+                                    <div class="col-md-9">
+                                        <div class="card shadow bg-light">
+                                            <div class="card-body">
+                                                <div class="star-rating">
+                                                    <i class="fa fa-star active"></i>
+                                                    <i class="fa fa-star active"></i>
+                                                    <i class="fa fa-star active"></i>
+                                                    <i class="fa fa-star active"></i>
+                                                    <i class="fa fa-star active"></i>
+                                                </div>
+                                                <p class="mb-0 pt-3">Great response time when selling and buying
+                                                    currency. I
+                                                    have
+                                                    not been
+                                                    disappointed.
+                                                </p>
+                                                <h6 class="mt-4 mb-0">Adewale Sobayo</h6>
+                                                <small class="text-green">CFO, Means Tech</small>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
 
-            </div>
+                    </div>
+                </section>
+            <!-- </div> -->
         </div>
     </section>
 
@@ -571,8 +639,9 @@
                 <img src="./img/boss.png" width="200" height="200" class="rounded-circle" />
                 <div class="w-50 w-md-auto d-block mx-auto position-relative py-3 px-3 py-md-4 px-md-5">
                     <i class="fas fa-quote-right quote-r position-absolute"></i>
-                    <p>Our goal is to be at the heart of the financial services industry as businesses expand across.
-                    </p>
+                    <h5 class="">Our goal is to be at the heart of the financial services industry as businesses expand
+                        across.
+                    </h5>
                     <i class="fas fa-quote-left quote-l position-absolute"></i>
                 </div>
                 <p class="boss-text pt-4 text-green">GM, LightHill Group</p>
@@ -585,7 +654,7 @@
         <div class="container">
             <h3 class="text-center">Team LightHill</h3>
             <p class="text-center">Meet the Best Team</p>
-            <div class="d-flex justify-content-around flex-wrap px-5 py-4">
+            <div class="d-flex justify-content-center flex-wrap px-5 py-4">
                 <img src="./img/team-1.png" class="rounded-circle team-img-size px-3 py-3" />
                 <img src="./img/team-2.png" class="rounded-circle team-img-size px-3 py-3" />
                 <img src="./img/team-3.png" class="rounded-circle team-img-size px-3 py-3" />
@@ -788,8 +857,9 @@
             var marker = new google.maps.Marker({ position: uluru, map: map });
         }
     </script>
-    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCiB8XzBXvEHb0nSrdkKo-T6kdsjfkWcd8&callback=initMap">
-    </script>
+    <script defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCiB8XzBXvEHb0nSrdkKo-T6kdsjfkWcd8&callback=initMap">
+        </script>
 </body>
 
 </html>

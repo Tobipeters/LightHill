@@ -22,6 +22,12 @@ h1, h2, h3, h4, h5, h6, p, .text-dark-blue{
     background: url("../img/map-bg.png") no-repeat center;
     background-size: cover;
 }
+.map-bg p, .succession-p p, .my-txt-mute{
+    color: #676767;
+}
+.shadow {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
 .mob-nav{
     display:none;    
 }
@@ -98,9 +104,12 @@ background:  #170538;
 .subsidiary-container{
     margin-top: 18rem;
 }
+.subsidiary-container p{
+    color: #979797;
+}
 .sub-light-sec h3{
-    font-size: 2.5rem;
-    font-weight: 600;
+    font-size: 50px;
+    font-weight: 700;
 }
 .sub-light-sec p{
     font-size: 15px;
@@ -170,11 +179,11 @@ background:  #170538;
     height: 350px;
 }
 .team-img-size{
-    width: 270px;
+    width: 150px;
     height: auto;
 }
 .talk-section{
-    background: #332851;
+        background-image: linear-gradient(to right, #504B69 , #170538);
 }
 .btn-col a{
     bottom: 0;
@@ -187,6 +196,9 @@ background:  #170538;
 }
 .all-testimonies{
     background: #F8F8F8;
+}
+.all-testimonies .card{
+    background: transparent ;
 }
 .quote-r, .quote-l{
     transform: scaleX(-1);
@@ -240,6 +252,9 @@ footer{
 .know-section{
     margin-top: -20rem;
 }
+.know-section p{
+    color: #504B69;
+}
 .succession-p{
     position: absolute;
     right: 0;
@@ -257,6 +272,10 @@ footer{
 .lighthill-card, .card-img-height img{
     border-radius: 30px;
 }
+ .card-img-height img{
+    height: 200px;
+    width: 100%;
+}
 .card-img-height img{
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
@@ -267,7 +286,47 @@ footer{
 .blog-section{
     margin-top: -6rem;
 }
+/* Team Image Fit */
+#gallery-card .card{
+    width: fit-content;
+}
+.team-img-fit{
+    width: 280px !important;
+    height: 280px !important;
+    padding: 7px;
+    border: 4px solid #95CE4D;
+}
+.cz-gallery .card-body>p, .cz-gallery .card-body>small{
+    color: #707070;
+}
+.cz-gallery .card-body> .fa-envelope{
+    color: #95CE4D !important;
+}
+.callback-abs{
+    position: absolute;
+    top: -17rem;
+    right: 0;
+    left: 0;
+}
+/* Gallery Image style */
+.gallery-img::before{
+        margin-left: 0;
+        left: 0;
+        border-radius: 0;
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+}
 
+.gallery-img::after{
+    width: fit-content;
+    padding-top:1rem;
+    height: 2.875rem;
+    font-size: .75rem;
+    text-align: center;
+    content: 'View \2192';
+}
 
 
 /* media queries for tablet, ipad and mobile */
@@ -345,6 +404,9 @@ footer{
     }
     .succession-header{
         top: 3rem;
+    }
+    .callback-abs{
+        position: static;
     }
 }
 
