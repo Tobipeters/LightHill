@@ -375,6 +375,12 @@ footer{
     .main-list{
         top: -1rem;
     }
+    .wlc-about .main-list{
+        top: -7rem;
+    }
+    .wlc-team .main-list{
+        top: -10rem;
+    }
     .main-list .slider-header{
         font-size: 1.5rem;
     }
