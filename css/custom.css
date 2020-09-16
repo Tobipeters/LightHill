@@ -428,6 +428,12 @@ footer{
     .callback-abs{
         position: static;
     }
+    .all-testimonies [data-controls='prev']{
+        left: -.5rem;
+    }
+     .all-testimonies [data-controls='next']{
+        right: -.5rem;
+    }
 }
 
 
@@ -435,16 +441,19 @@ footer{
     .main-slider .tns-nav {
         bottom: -3rem;
     }
+    .slider-header{
+        font-size: 2rem;
+    }
     .main-list li{
         padding: 1.7rem !important;
     }
     .circle-1, .circle-2, .circle-3, .circle-4, .circle-6, .circle-7{
         position: unset;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
     .sub-light-sec{
-        margin-top: 42rem;
+        margin-top: 45rem;
         text-align: center;
     }
     .expert-imges{
@@ -466,7 +475,7 @@ footer{
         position: unset !important;
     }
     .know-section{
-        margin-top: 42rem;
+        margin-top: 45rem;
     }
     .succession-header, .succession-p{
         position: static;
