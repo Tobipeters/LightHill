@@ -443,7 +443,7 @@ footer{
 }
 
 
-@media screen and (max-width:450px){
+@media screen and (max-width:768px){
     .main-slider .tns-nav {
         bottom: -3rem;
     }
@@ -453,7 +453,7 @@ footer{
     .main-list li{
         padding: 1.7rem !important;
     }
-    .circle-1, .circle-2, .circle-3, .circle-4, .circle-6, .circle-7{
+    .circle-1, .circle-2, .circle-3, .circle-4,.circle-5, .circle-6, .circle-7{
         position: unset;
         margin-top: 1rem;
         margin-bottom: 1rem;
@@ -498,6 +498,11 @@ footer{
 
 
 /* Rare exceptions */
+@media screen and (min-width: 450px) and (max-width:767px) {
+    .expert-imges img:last-child {
+        right: 10rem;
+    }
+  }
 @media screen and (max-width:320px){
     .know-section{
         margin-top: 45rem;
