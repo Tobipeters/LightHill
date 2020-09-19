@@ -1,6 +1,9 @@
 h1, h2, h3, h4, h5, h6, p, .text-dark-blue{
     color: #170538;
 }
+.txt-dull-blue{
+    color:#504B69;
+}
 .text-green{
     color: #95CE4D;
 }
@@ -178,11 +181,17 @@ background:  #170538;
     background: #E9E9E9;
 }
 .parallax{
-    background: url("../img/para-img.png") no-repeat;
+    background: url("../img/para-img.png") no-repeat; 
+    height: 350px;
+}
+.parallax-gradient{
+    background-image: linear-gradient(to right, #fff , rgba(255,255,255,0.2)),url("../img/para-img.png");
+    height: 500px;
+}
+.parallax, .parallax-gradient{
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    height: 350px;
 }
 .team-img-size{
     width: 150px;
@@ -473,6 +482,9 @@ footer{
     }
     .parallax{
         height: 650px;
+    }
+    .parallax-gradient{
+        height: 480px;
     }
     .btn-col{
         justify-content: start !important;
