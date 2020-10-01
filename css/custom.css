@@ -522,10 +522,13 @@ footer{
     .expert-imges img:last-child {
         right: 10rem;
     }
+
+  }
+  @media screen and (max-width:500px){
     .blog-view-img{
         height: 200px;
     }
-  }
+}
 @media screen and (max-width:320px){
     .know-section{
         margin-top: 45rem;
