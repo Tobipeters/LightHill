@@ -13875,6 +13875,18 @@ a.nav-link:hover .media-tab-media {
         background-color: #fff
     }
 }
+@media (min-width: 320px) {
+    .navbar-sticky.navbar-stuck {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        -webkit-animation: navbar-show .25s;
+        animation: navbar-show .25s;
+        box-shadow: 0 0.25rem 0.5625rem -0.0625rem rgba(0, 0, 0, 0.03), 0 0.275rem 1.25rem -0.0625rem rgba(0, 0, 0, 0.05);
+        z-index: 1030
+    }
+}
 
 @-webkit-keyframes navbar-show {
     from {
@@ -14312,7 +14324,13 @@ a.nav-link:hover .media-tab-media {
 }
 
 .accordion .accordion-indicator::before {
-    content: '\e90c'
+    font-family: "Font Awesome 5 Free";
+    content: '\f106';
+    font-size: 1.3rem;
+   display: inline-block;
+   padding-right: 3px;
+   vertical-align: middle;
+   font-weight: 600
 }
 
 .accordion .collapsed .accordion-indicator {

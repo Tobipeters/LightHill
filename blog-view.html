@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lighthill Blog View</title>
+
+    <!-- favicon -->
+    <link rel="icon" href="https://lighthillng.com/wp-content/uploads/2018/03/cropped-nG128kEm_400x400-192x192.jpg"
+        sizes="192x192" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" id="main-styles" href="./css/theme.min.css">
+    <!-- css for external css -->
+    <link rel="stylesheet" href="./css/vendor.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/custom.css">
+    <!-- Font Awesome link -->
+    <link rel="stylesheet" href="./font/css/all.css">
+    <script defer src="./font/js/all.js"></script>
+
+
+</head>
+
+<body>
+      <!-- Header section -->
+      <header>
+
+            <!-- Topbar-->
+            <div class="topbar text-dark bg-sec d-none d-lg-block">
+                <div class="container-fluid">
+                    <div>
+                        <div class="topbar-text text-nowrap d-none d-md-inline-block border-left border-light pl-3 ml-3">
+                            <span class="mr-4">
+                                Mon - Fri 8:00 - 18:00
+                            </span>
+                            <span class="mr-4">
+                                <a class="topbar-link text-dark" href="tel:+2348098765432">
+                                    +234 809 876 5432
+                                </a>
+                            </span>
+                            <span class="mr-4">
+                                info@lighthillng.com
+                            </span>
+                        </div>
+                    </div>
+                    <div class="topbar-text ml-auto">
+                        <div class="top-number d-inline-block mr-4">
+                            <h6 class="mb-1 font-weight-bold">Number 1</h6>
+                            <p class="mb-0">In Lagos</p>
+                        </div>
+                        <div class="top-number d-inline-block mr-4">
+                            <h6 class="mb-1 font-weight-bold">Number 1</h6>
+                            <p class="mb-0">In Currency trading</p>
+                        </div>
+                        <div class="top-number d-inline-block">
+                            <h6 class="mb-1 font-weight-bold">Trusted By</h6>
+                            <p class="mb-0">Several Customers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Desktop Navbar -->
+            <div class="navbar-sticky bg-nav">
+                <div class="navbar navbar-expand-lg navbar-light">
+                    <div class="container">
+                        <!-- Logo for large screen -->
+                        <a class="navbar-brand d-none d-sm-block mr-3 flex-shrink-0" href="index.html"
+                            style="min-width: 7rem;">
+                            <img width="142" src="./img/light hill logo.png" alt="Light Hill" />
+                        </a>
+                        <!-- Logo for smaller screen (Mobile phones) -->
+                        <a class="navbar-brand d-sm-none mr-2" href="index.html" style="min-width: 4.625rem;">
+                            <img width="74" src="./img/light hill logo.png" alt="Light Hill" /></a>
+    
+    
+                        <!-- Navbar Items-->
+                        <div class="navbar-toolbar d-flex flex-shrink-0 align-items-center">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarCollapse">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <ul class="nav desktop-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about.html">About us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="team.html">Team LightHill</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                                        aria-haspopup="true" aria-expanded="false">Subsidiaries</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="investment.html">Lighthill Investment Company Ltd</a>
+                                        <a class="dropdown-item" href="logistic.html">Lighthill Logistics Company Ltd<</a>
+                                                <a class="dropdown-item" href="agro.html">InsightHills BDC Ltd</a>
+                                        <a class="dropdown-item" href="property.html">Insighthills Investment and Procument Ltd</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="gallery.html">Gallery</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="blog.html">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">Contact</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="navbar navbar-expand-lg navbar-light navbar-stuck-menu mt-n2 pt-0 pb-2">
+                    <div class="container">
+                        <div class="collapse navbar-collapse" id="navbarCollapse">
+                            <ul class="nav mob-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active d-inline-block" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link d-inline-block" href="about.html">About us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link d-inline-block" href="team.html">Team LightHill</a>
+                                </li>
+                                <li class="nav-item dropdown  d-inline-block">
+                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                                        aria-haspopup="true" aria-expanded="false">Subsidiaries</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="investment.html">Lighthill Investment Company Ltd</a>
+                                        <a class="dropdown-item" href="logistic.html">Lighthill Logistics Company Ltd<</a>
+                                                <a class="dropdown-item" href="agro.html">InsightHills BDC Ltd</a>
+                                        <a class="dropdown-item" href="property.html">Insighthills Investment and Procument Ltd</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link  d-inline-block" href="gallery.html">Gallery</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link d-inline-block" href="blog.html">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link d-inline-block" href="contact.html">Contact</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link d-inline-block" href="#">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+    <!--Title-->
+    <section class="pt-5 pb-5 main-bg">
+        <div class="container py-xl-2 mb-0">
+            <div class=" text-center px-2 py-5 px-md-5">
+                <h2 class="mb-4 slider-header">LightHill Blog</h2>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- View Blog Post -->
+    <section class="py-1 pt-lg-1 pb-lg-5 bg-sec">
+        <div class="container">
+            <nav aria-label="breadcrumb" class="py-4">
+                <ol class="breadcrumb text-uppercase flex-lg-nowrap justify-content-center justify-content-lg-start">
+                    <li class="breadcrumb-item text-nowrap"><a href="blog.html">Blog</a>
+                    </li>
+                    <li class="breadcrumb-item text-nowrap active" aria-current="page">US Core Pce price index</li>
+                </ol>
+            </nav>
+            <!-- Blod Details -->
+            <section class="px-4 blog-view-sect">
+                <img src="./img/blog-img-2.jpg" class="w-100 blog-view-img" />
+                <div class="d-flex justify-content-center py-4">
+                    <div class="">
+                        <div class="btn text-white bg-green mr-2">LightHill</div>
+                        <small class="text-green text-uppercase">SEPTEMBER 14, 2018</small>
+                    </div>
+                </div>
+                <!-- Blog details -->
+                <div class="py-4 px-3 px-md-5 blog-detail">
+                    <h3 class="text-uppercase mb-3 text-center">US CORE PCE PRICE INDEX</h3>
+                    <p class="mb-0 ">But I must explain to you how all this mistaken idea of denouncing pleasure and
+                        praising pain was born and I will give you a complete account of the system, and expound the
+                        actual teachings of the great explorer of the truth, the master-builder of human happiness. No
+                        one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who
+                        do not know how to pursue pleasure rationally encounter consequences that are extremely painful.
+                        Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it
+                        is pain, but because occasionally circumstances occur in which toil and pain can procure him
+                        some great pleasure. To take a trivial example, which of us ever undertakes laborious physical
+                        exercise, except to obtain some advantage from it? But who has any right to find fault with a
+                        man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain
+                        that produces no resultant pleasure? On the other hand, we denounce with righteous indignation
+                        and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so
+                        blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and
+                        equal blame belongs to those who fail in their duty through weakness of will, which is the same
+                        as saying through shrinking from toil and pain. But I must explain to you how all this mistaken
+                        idea of denouncing pleasure and praising pain was born and I will give you a complete.</p>
+
+                    <h5 class="my-4 text-uppercase">Is it a lucrative option?</h5>
+                    <p class="mb-4">
+                        But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain
+                        was born and I will give you a complete account of the system, and expound the actual teachings
+                        of the great explorer of the truth, the master-builder of human happiness. No one rejects,
+                        dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know
+                        how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again
+                        is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain,
+                        but because occasionally circumstances occur in which toil and pain can procure him some great
+                        pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise,
+                        except to obtain some advantage from it? But who has any right to find fault with a man who
+                        chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that
+                        produces no resultant pleasure? On the other hand, we denounce with righteous indignation and
+                        dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so
+                        blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and
+                        equal blame belongs to those who fail in their duty through weakness of will, which is the same
+                        as saying through shrinking from toil and pain. But I must explain to you how all this mistaken
+                        idea of denouncing pleasure and praising pain was born and I will give you a complete.
+                    </p>
+                    <img src="./img/blog-img-3.jpg" class="w-100 blog-view-img" />
+                    <p class="py-4">
+                        But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain
+                        was born and I will give you a complete account of the system, and expound the actual teachings
+                        of the great explorer of the truth, the master-builder of human happiness. No one rejects,
+                        dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know
+                        how to pursue pleasure rationally encounter consequences that are extremely painful.
+                    </p>
+                    <div class="">
+                        <span class="mr-4">
+                            <i class="fas fa-thumbs-up"></i>
+                            <span class="ml-2">0 Likes</span>
+                        </span>
+                        <span>
+                            <i class="fas fa-comment-alt"></i>
+                            <span class="ml-2">0 Comment</span>
+                        </span>
+                    </div>
+                </div>
+                <!-- More Blog post Section -->
+                <section class="bg-sec">
+                        <h5 class="mt-4 font-weight-bold text-uppercase">More Blogs</h5>
+                    <div class="py-4">
+                        <!-- <div class="row"> -->
+                        <section class="cz-carousel cz-controls-lg all-testimonies bg-sec">
+                            <div class="cz-carousel-inner" data-carousel-options="{
+                                                    &quot;mode&quot;: &quot;carousel&quot;, 
+                                                    &quot;speed&quot;: &quot;1000&quot;, 
+                                                    &quot;autoplayTimeout&quot;:&quot;4000&quot;, 
+                                                    &quot;autoplay&quot;: false, 
+                                                    &quot;responsive&quot;: 
+                                                        {
+                                                            &quot;0&quot;:
+                                                                {
+                                                                    &quot;items&quot;:1,
+                                                                    &quot;nav&quot;:false, 
+                                                                    &quot;controls&quot;: true,
+                                                                    &quot;gutter&quot;: 10
+                                                                },
+                                                            &quot;892&quot;:
+                                                            {
+                                                                &quot;items&quot;:3,
+                                                                &quot;nav&quot;:false, 
+                                                                &quot;controls&quot;: true,
+                                                                &quot;gutter&quot;: 16
+                                                            }
+                                                        }
+                                                    }">
+                                <!-- Item 1 -->
+                                <div>
+                                    <div class="card lighthill-card shadow w-100 bg-white my-3">
+                                        <div class="card-img-top card-img-height">
+                                            <img src="./img/para-img.png" alt="Blog Image" />
+                                        </div>
+                                        <div class="card-body py-5 ">
+                                            <small class="text-green d-block mb-3">September 14, 2020</small>
+
+                                            <h5 class="card-title mt-3">US CORE PCE PRICE INDEX</h5>
+
+                                            <a class="text-dark-blue mt-4 font-weight-bold d-block" href="#">
+                                                View more Info <i class="fas fa-long-arrow-alt-right ml-2"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Item 2 -->
+                                <div>
+                                    <div class="card lighthill-card shadow w-100 bg-white my-3">
+                                        <div class="card-img-top card-img-height">
+                                            <img src="./img/blog-img-2.jpg" alt="Blog Image" />
+                                        </div>
+                                        <div class="card-body py-5 ">
+                                            <small class="text-green d-block mb-3">September 14, 2020</small>
+
+                                            <h5 class="card-title mt-3">US CORE PCE PRICE INDEX</h5>
+
+                                            <a class="text-dark-blue mt-4 font-weight-bold d-block" href="#">
+                                                View more Info <i class="fas fa-long-arrow-alt-right ml-2"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- item 3 -->
+                                <div>
+                                    <div class="card lighthill-card shadow w-100 bg-white my-3">
+                                        <div class="card-img-top card-img-height">
+                                            <img src="./img/blog-img-1.png" alt="Blog Image" />
+                                        </div>
+                                        <div class="card-body py-5 ">
+                                            <small class="text-green d-block mb-3">September 14, 2020</small>
+
+                                            <h5 class="card-title mt-3">US CORE PCE PRICE INDEX</h5>
+
+                                            <a class="text-dark-blue mt-4 font-weight-bold d-block" href="#">
+                                                View more Info <i class="fas fa-long-arrow-alt-right ml-2"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- item 4 -->
+                                <div>
+
+                                </div>
+
+                            </div>
+                        </section>
+                        <!-- </div> -->
+                    </div>
+                </section>
+            </section>
+
+        </div>
+    </section>
+
+
+
+    <!-- Success story -->
+    <section class="py-5">
+        <div class="container">
+            <h3 class="pt-5 text-center font-weight-bold">Our Success Stories</h3>
+            <p class="text-center mb-5">What we have done</p>
+            <div class="d-flex justify-content-around mx-auto flex-wrap py-3">
+                <div class="text-center px-4 mb-md-1 mb-4">
+                    <h1 class="font-weight-bold">10000</h1>
+                    <h5 class="font-weight-bold">All Time Clients</h5>
+                </div>
+                <div class="text-center px-4 mb-md-1 mb-4">
+                    <h1 class="font-weight-bold">979</h1>
+                    <h5 class="font-weight-bold">Clients in This Year</h5>
+                </div>
+                <div class="text-center px-4 mb-md-1 mb-4">
+                    <h1 class="font-weight-bold">300</h1>
+                    <h5 class="font-weight-bold">New Projects</h5>
+                </div>
+                <div class="text-center px-4 mb-md-1 mb-4">
+                    <h1 class="font-weight-bold">35%</h1>
+                    <h5 class="font-weight-bold">Avg Profit Increased</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-4 col-md-5">
+                    <img src="./img/light-logo.png" width="160" height="50" class="" />
+                    <form class="mt-5 mb-4">
+                        <input type="text" class="form-control rounded-0 border-0 mb-3" placeholder="Full Name">
+                        <input type="text" class="form-control rounded-0 border-0 mb-3" placeholder="Email">
+                        <textarea class="form-control rounded-0 border-0 mb-3" placeholder="Message"
+                            rows="4"></textarea>
+                        <button type="submit" class="btn btn-light shadow ">Submit</button>
+                    </form>
+
+                    <div class="mt-5">
+                        <p class="text-green">Social media</p>
+                        <div class="text-light font-lg">
+                            <i class="fab fa-facebook-f mr-3"></i>
+                            <i class="fab fa-twitter mr-3"></i>
+                            <i class="fab fa-linkedin-in mr-3"></i>
+                            <i class="fab fa-google-plus-g mr-3"></i>
+                            <i class="fab fa-instagram mr-3"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-1"></div>
+                <div class="col-lg-5 col-md-6 mt-5 mt-md-0">
+                    <h6 class="text-light">Contact Us</h6>
+                    <div class="row my-4">
+                        <div class="col-md-7">
+                            <p class="text-green">Lagos Address</p>
+                            <div class="row">
+                                <div class="col-2">
+                                    <img src="./img/marker.png" width="50" height="50" class="d-block mx-auto" />
+                                </div>
+                                <div class="col-10">
+                                    <small class="text-light mb-3 d-block">1, Alhaja Abass street. Ogudu, Lagos P.O.Box
+                                        8862, Somolu,
+                                        Lagos.
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-2">
+                                    <img src="./img/tel.png" width="15" height="15" class="d-block mx-auto" />
+                                </div>
+                                <div class="col-10">
+                                    <small class="text-light mb-3 d-block">+234 (0)1291 9028, (0)9087088923
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-2">
+                                    <img src="./img/postal.png" width="15" height="15" class="d-block mx-auto" />
+                                </div>
+                                <div class="col-10">
+                                    <small class="text-light mb-3 d-block">info@lighthillng.com </small>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                        <div class="col-md-5">
+                            <div class="map-holder">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.61175673917!2d3.3913639142667407!3d6.570586124438286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b929c3c80fb7f%3A0xf557747284860990!2sLightHill%20Group!5e0!3m2!1sen!2sng!4v1600243733776!5m2!1sen!2sng"
+                                    width="150" height="150" frameborder="0" style="border:0;" allowfullscreen=""
+                                    aria-hidden="false" tabindex="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-7">
+                            <p class="text-green">Abuja Address</p>
+                            <div class="row">
+                                <div class="col-2">
+                                    <img src="./img/marker.png" width="50" height="50" class="d-block mx-auto" />
+                                </div>
+                                <div class="col-10">
+                                    <small class="text-light mb-3 d-block">1, Alhaja Abass street. Ogudu, Lagos P.O.Box
+                                        8862, Somolu,
+                                        Lagos.
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-2">
+                                    <img src="./img/tel.png" width="15" height="15" class="d-block mx-auto" />
+                                </div>
+                                <div class="col-10">
+                                    <small class="text-light mb-3 d-block">+234 (0)1291 9028, (0)9087088923
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-2">
+                                    <img src="./img/postal.png" width="15" height="15" class="d-block mx-auto" />
+                                </div>
+                                <div class="col-10">
+                                    <small class="text-light mb-3 d-block">info@lighthillng.com </small>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                        <div class="col-md-5">
+                            <div class="map-holder">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.61175673917!2d3.3913639142667407!3d6.570586124438286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b929c3c80fb7f%3A0xf557747284860990!2sLightHill%20Group!5e0!3m2!1sen!2sng!4v1600243733776!5m2!1sen!2sng"
+                                    width="150" height="150" frameborder="0" style="border:0;" allowfullscreen=""
+                                    aria-hidden="false" tabindex="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-7">
+
+                        </div>
+                        <div class="col-md-5"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr />
+        <div class="container-fluid py-4">
+            <h6 class="text-green">Subsidiaries</h6>
+            <div class="row">
+                <div class="col-lg-8 text-center text-md-left text-light">
+                    <small class="mx-2 mb-2 d-inline-block">. LightHill Investment Company Ltd</small>
+                    <small class="mx-2 mb-2 d-inline-block">. Lighthill Logistics Company Ltd</small>
+                    <small class="mx-2 mb-2 d-inline-block">. InsightHills Investment and Procurement Ltd</small>
+                    <small class="mx-2 mb-2 d-inline-block">. Insighthills BDC Ltd</small>
+                </div>
+                <div class="col-lg-4">
+                    <small class="text-center text-lg-right d-block mt-4 mt-lg-0 text-light">Copyright 2018, All Right
+                        Reserved, LightHill Group</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script section -->
+    <script src="./js/vendor.min.js"></script>
+    <script src="./js/theme.min.js"></script>
+
+
+</body>
+
+</html>

@@ -7,6 +7,9 @@ h1, h2, h3, h4, h5, h6, p, .text-dark-blue{
 .text-green{
     color: #95CE4D;
 }
+.blog-detail p, .blog-detail span{
+    color: #717171;
+}
 .bg-green{
     background: #95CE4D;
 }
@@ -20,6 +23,7 @@ h1, h2, h3, h4, h5, h6, p, .text-dark-blue{
 .main-bg{
     background: url("../img/main-bg.png") no-repeat center;
     background-size: cover;
+    background-color: #F7FFFF;
 }
 .map-bg{
     background: url("../img/map-bg.png") no-repeat center;
@@ -209,9 +213,6 @@ background:  #170538;
 .star-rating .unactive{
     color: #ccc;
 }
-.all-testimonies{
-    background: #F8F8F8;
-}
 .all-testimonies [data-controls='prev'], .all-testimonies [data-controls='next']{
     color: #fff;
     background: #95CE4D;
@@ -354,6 +355,10 @@ footer{
     content: 'View \2192';
 }
 
+/* Blog View */
+.blog-view-img{
+    height: 400px;
+}
 
 /* media queries for tablet, ipad and mobile */
 
@@ -504,6 +509,9 @@ footer{
     .blog-section{
         margin-top: -7rem;
     }
+    .blog-view-img{
+        height: 230px;
+    }
 
 }
 
@@ -513,6 +521,9 @@ footer{
 @media screen and (min-width: 450px) and (max-width:767px) {
     .expert-imges img:last-child {
         right: 10rem;
+    }
+    .blog-view-img{
+        height: 200px;
     }
   }
 @media screen and (max-width:320px){
