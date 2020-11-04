@@ -8,12 +8,10 @@
     <title>Contact Lighthill</title>
 
     <!-- favicon -->
-    <link rel="icon" href="https://lighthillng.com/wp-content/uploads/2018/03/cropped-nG128kEm_400x400-192x192.jpg"
-        sizes="192x192" />
+    <link rel="icon" href="https://lighthillng.com/wp-content/uploads/2018/03/cropped-nG128kEm_400x400-192x192.jpg" sizes="192x192" />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <!-- Main Theme Styles + Bootstrap-->
     <link rel="stylesheet" media="screen" id="main-styles" href="./css/theme.min.css">
     <!-- css for external css -->
@@ -26,6 +24,29 @@
 </head>
 
 <body>
+    <!-- Search Modal here -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog mt-0 modal-lg mx-0 mx-md-auto ">
+            <div class="modal-content  search-mod-bg rounded-0 border-0">
+                <div class="modal-header py-2 border-bottom-0">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                </div>
+                <div class="modal-body">
+                    <!-- <div class="form-group">
+                                <input type="text" class="form-control " placeholder="Search...">
+                            </div> -->
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text " id="basic-addon1"> <i class="fa fa-search text-muted"></i> </span>
+                        </div>
+                        <input type="text" class="form-control border-left-0" placeholder="Search..." aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Header section -->
     <header>
 
@@ -69,8 +90,7 @@
             <div class="navbar navbar-expand-lg navbar-light">
                 <div class="container">
                     <!-- Logo for large screen -->
-                    <a class="navbar-brand d-none d-sm-block mr-3 flex-shrink-0" href="index.html"
-                        style="min-width: 7rem;">
+                    <a class="navbar-brand d-none d-sm-block mr-3 flex-shrink-0" href="index.html" style="min-width: 7rem;">
                         <img width="142" src="./img/light hill logo.png" alt="Light Hill" />
                     </a>
                     <!-- Logo for smaller screen (Mobile phones) -->
@@ -80,13 +100,12 @@
 
                     <!-- Navbar Items-->
                     <div class="navbar-toolbar d-flex flex-shrink-0 align-items-center">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse"
-                            data-target="#navbarCollapse">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <ul class="nav desktop-nav">
                             <li class="nav-item">
-                                <a class="nav-link active" href="index.html">Home</a>
+                                <a class="nav-link" href="index.html">Home</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="about.html">About us</a>
@@ -95,12 +114,11 @@
                                 <a class="nav-link" href="team.html">Team LightHill</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-                                    aria-haspopup="true" aria-expanded="false">Subsidiaries</a>
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Subsidiaries</a>
                                 <div class="dropdown-menu">
                                     <a class="dropdown-item" href="investment.html">Lighthill Investment Company Ltd</a>
                                     <a class="dropdown-item" href="logistic.html">Lighthill Logistics Company Ltd<</a>
-                                            <a class="dropdown-item" href="agro.html">InsightHills BDC Ltd</a>
+                                    <a class="dropdown-item" href="agro.html">InsightHills BDC Ltd</a>
                                     <a class="dropdown-item" href="property.html">Insighthills Investment and Procument
                                         Ltd</a>
                                 </div>
@@ -112,9 +130,9 @@
                                 <a class="nav-link" href="blog.html">Blog</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contact</a>
+                                <a class="nav-link active" href="contact.html">Contact</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item" data-toggle="modal" data-target="#searchModal">
                                 <a class="nav-link" href="#">
                                     <i class="fa fa-search"></i>
                                 </a>
@@ -137,12 +155,11 @@
                                 <a class="nav-link d-inline-block" href="team.html">Team LightHill</a>
                             </li>
                             <li class="nav-item dropdown  d-inline-block">
-                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-                                    aria-haspopup="true" aria-expanded="false">Subsidiaries</a>
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Subsidiaries</a>
                                 <div class="dropdown-menu">
                                     <a class="dropdown-item" href="investment.html">Lighthill Investment Company Ltd</a>
                                     <a class="dropdown-item" href="logistic.html">Lighthill Logistics Company Ltd<</a>
-                                            <a class="dropdown-item" href="agro.html">InsightHills BDC Ltd</a>
+                                    <a class="dropdown-item" href="agro.html">InsightHills BDC Ltd</a>
                                     <a class="dropdown-item" href="property.html">Insighthills Investment and Procument
                                         Ltd</a>
                                 </div>
@@ -156,7 +173,7 @@
                             <li class="nav-item">
                                 <a class="nav-link d-inline-block" href="contact.html">Contact</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item" data-toggle="modal" data-target="#searchModal">
                                 <a class="nav-link d-inline-block" href="#">
                                     <i class="fa fa-search"></i>
                                 </a>
@@ -189,9 +206,7 @@
                         <img src="./img/boss.png" width="200" height="200" class="rounded-circle" />
                         <div class="w-50 w-md-auto d-inline-block mx-auto position-relative pt-3 px-3 pt-md-4 px-md-5">
                             <i class="fas fa-quote-right quote-r position-absolute"></i>
-                            <h6 class="mb-0">Our goal is to be at the heart of the financial services industry as
-                                businesses expand
-                                across.
+                            <h6 class="mb-0">Our goal is to be at the heart of the financial services industry as businesses expand across.
                             </h6>
                             <i class="fas fa-quote-left quote-l position-absolute"></i>
                         </div>
@@ -211,8 +226,7 @@
                                     <input type="text" class="form-control mb-3" placeholder="Email">
                                     <input type="text" class="form-control mb-3" placeholder="Phone Number">
                                     <textarea class="form-control mb-3" placeholder="Message" rows="4"></textarea>
-                                    <button type="submit"
-                                        class="btn bg-green text-light shadow d-block mx-auto">Submit</button>
+                                    <button type="submit" class="btn bg-green text-light shadow d-block mx-auto">Submit</button>
                                 </form>
                             </div>
                         </div>
@@ -339,8 +353,7 @@
                     <form class="mt-5 mb-4">
                         <input type="text" class="form-control rounded-0 border-0 mb-3" placeholder="Full Name">
                         <input type="text" class="form-control rounded-0 border-0 mb-3" placeholder="Email">
-                        <textarea class="form-control rounded-0 border-0 mb-3" placeholder="Message"
-                            rows="4"></textarea>
+                        <textarea class="form-control rounded-0 border-0 mb-3" placeholder="Message" rows="4"></textarea>
                         <button type="submit" class="btn btn-light shadow ">Submit</button>
                     </form>
 
@@ -395,10 +408,8 @@
                         </div>
                         <div class="col-md-5">
                             <div class="map-holder">
-                                <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.61175673917!2d3.3913639142667407!3d6.570586124438286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b929c3c80fb7f%3A0xf557747284860990!2sLightHill%20Group!5e0!3m2!1sen!2sng!4v1600243733776!5m2!1sen!2sng"
-                                    width="150" height="150" frameborder="0" style="border:0;" allowfullscreen=""
-                                    aria-hidden="false" tabindex="0"></iframe>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.61175673917!2d3.3913639142667407!3d6.570586124438286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b929c3c80fb7f%3A0xf557747284860990!2sLightHill%20Group!5e0!3m2!1sen!2sng!4v1600243733776!5m2!1sen!2sng"
+                                    width="150" height="150" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                             </div>
                         </div>
                     </div>
@@ -439,10 +450,8 @@
                         </div>
                         <div class="col-md-5">
                             <div class="map-holder">
-                                <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.61175673917!2d3.3913639142667407!3d6.570586124438286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b929c3c80fb7f%3A0xf557747284860990!2sLightHill%20Group!5e0!3m2!1sen!2sng!4v1600243733776!5m2!1sen!2sng"
-                                    width="150" height="150" frameborder="0" style="border:0;" allowfullscreen=""
-                                    aria-hidden="false" tabindex="0"></iframe>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.61175673917!2d3.3913639142667407!3d6.570586124438286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b929c3c80fb7f%3A0xf557747284860990!2sLightHill%20Group!5e0!3m2!1sen!2sng!4v1600243733776!5m2!1sen!2sng"
+                                    width="150" height="150" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                             </div>
                         </div>
                     </div>

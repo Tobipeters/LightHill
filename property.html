@@ -8,12 +8,10 @@
     <title>Subsidiary | Property</title>
 
     <!-- favicon -->
-    <link rel="icon" href="https://lighthillng.com/wp-content/uploads/2018/03/cropped-nG128kEm_400x400-192x192.jpg"
-        sizes="192x192" />
+    <link rel="icon" href="https://lighthillng.com/wp-content/uploads/2018/03/cropped-nG128kEm_400x400-192x192.jpg" sizes="192x192" />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <!-- Main Theme Styles + Bootstrap-->
     <link rel="stylesheet" media="screen" id="main-styles" href="./css/theme.min.css">
     <!-- css for external css -->
@@ -26,6 +24,29 @@
 </head>
 
 <body>
+    <!-- Search Modal here -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog mt-0 modal-lg mx-0 mx-md-auto ">
+            <div class="modal-content  search-mod-bg rounded-0 border-0">
+                <div class="modal-header py-2 border-bottom-0">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                </div>
+                <div class="modal-body">
+                    <!-- <div class="form-group">
+                                <input type="text" class="form-control " placeholder="Search...">
+                            </div> -->
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text " id="basic-addon1"> <i class="fa fa-search text-muted"></i> </span>
+                        </div>
+                        <input type="text" class="form-control border-left-0" placeholder="Search..." aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Header section -->
     <header>
 
@@ -69,8 +90,7 @@
             <div class="navbar navbar-expand-lg navbar-light">
                 <div class="container">
                     <!-- Logo for large screen -->
-                    <a class="navbar-brand d-none d-sm-block mr-3 flex-shrink-0" href="index.html"
-                        style="min-width: 7rem;">
+                    <a class="navbar-brand d-none d-sm-block mr-3 flex-shrink-0" href="index.html" style="min-width: 7rem;">
                         <img width="142" src="./img/light hill logo.png" alt="Light Hill" />
                     </a>
                     <!-- Logo for smaller screen (Mobile phones) -->
@@ -80,8 +100,7 @@
 
                     <!-- Navbar Items-->
                     <div class="navbar-toolbar d-flex flex-shrink-0 align-items-center">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse"
-                            data-target="#navbarCollapse">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <ul class="nav desktop-nav">
@@ -95,12 +114,11 @@
                                 <a class="nav-link" href="team.html">Team LightHill</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-                                    aria-haspopup="true" aria-expanded="false">Subsidiaries</a>
+                                <a class="nav-link active dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Subsidiaries</a>
                                 <div class="dropdown-menu">
                                     <a class="dropdown-item" href="investment.html">Lighthill Investment Company Ltd</a>
                                     <a class="dropdown-item" href="logistic.html">Lighthill Logistics Company Ltd<</a>
-                                            <a class="dropdown-item" href="agro.html">InsightHills BDC Ltd</a>
+                                    <a class="dropdown-item" href="agro.html">InsightHills BDC Ltd</a>
                                     <a class="dropdown-item" href="property.html">Insighthills Investment and Procument
                                         Ltd</a>
                                 </div>
@@ -114,7 +132,7 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="contact.html">Contact</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item" data-toggle="modal" data-target="#searchModal">
                                 <a class="nav-link" href="#">
                                     <i class="fa fa-search"></i>
                                 </a>
@@ -137,12 +155,11 @@
                                 <a class="nav-link d-inline-block" href="team.html">Team LightHill</a>
                             </li>
                             <li class="nav-item dropdown  d-inline-block">
-                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-                                    aria-haspopup="true" aria-expanded="false">Subsidiaries</a>
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Subsidiaries</a>
                                 <div class="dropdown-menu">
                                     <a class="dropdown-item" href="investment.html">Lighthill Investment Company Ltd</a>
                                     <a class="dropdown-item" href="logistic.html">Lighthill Logistics Company Ltd<</a>
-                                            <a class="dropdown-item" href="agro.html">InsightHills BDC Ltd</a>
+                                    <a class="dropdown-item" href="agro.html">InsightHills BDC Ltd</a>
                                     <a class="dropdown-item" href="property.html">Insighthills Investment and Procument
                                         Ltd</a>
                                 </div>
@@ -156,7 +173,7 @@
                             <li class="nav-item">
                                 <a class="nav-link d-inline-block" href="contact.html">Contact</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item" data-toggle="modal" data-target="#searchModal">
                                 <a class="nav-link d-inline-block" href="#">
                                     <i class="fa fa-search"></i>
                                 </a>
@@ -192,32 +209,23 @@
                 </div>
                 <div class="col-md-6">
                     <p class="pt-4 my-txt-mute">
-                        <span class="text-dark font-weight-bold">The team at Lighthill Investment </span>are more than
-                        real estate agents looking for real estate listings. We are a dedicated team of truly
-                        passionate, property professionals who understand our clients’ needs and wants. When making
-                        property decisions that impact your family now and in the future, you need a Lighthill
-                        Properties partner. We understand that your home is an important part of your life, it houses
-                        your family, it’s where memories are made and it provides for your future. For over eight years
-                        Lighthill Properties has been building a wealth of experience and knowledge in the high-value,
-                        luxury property market. LPC specializes in the finest coastal, lifestyle, luxury and executive
-                        real estate in Lagos Nigeria
+                        <span class="text-dark font-weight-bold">The team at Lighthill Investment </span>are more than real estate agents looking for real estate listings. We are a dedicated team of truly passionate, property professionals who understand
+                        our clients’ needs and wants. When making property decisions that impact your family now and in the future, you need a Lighthill Properties partner. We understand that your home is an important part of your life, it houses your
+                        family, it’s where memories are made and it provides for your future. For over eight years Lighthill Properties has been building a wealth of experience and knowledge in the high-value, luxury property market. LPC specializes in
+                        the finest coastal, lifestyle, luxury and executive real estate in Lagos Nigeria
                     </p>
                     <ul class="my-txt-mute">
                         <li class="">
                             The success of the whole process is based on the trust the clients place in us.
                         </li>
                         <li class="">
-                            We believe that one of the key points to our success is to understand the client’s
-                            wishes.
+                            We believe that one of the key points to our success is to understand the client’s wishes.
                         </li>
                         <li class="">
-                            Our aim, as a company, is to have a proactive and productive team and close
-                            successful real estate deals, but
-                            above all, have a client that is pleased with their decision.
+                            Our aim, as a company, is to have a proactive and productive team and close successful real estate deals, but above all, have a client that is pleased with their decision.
                         </li>
                         <li class="">
-                            Customers have come to expect only the best from our team. We deliver this by understanding
-                            their goals and then adopting them as our own.
+                            Customers have come to expect only the best from our team. We deliver this by understanding their goals and then adopting them as our own.
                         </li>
                         <li class="">
                             We're committed to providing the gold standard in service.
@@ -240,9 +248,7 @@
                         <div class="col-9">
                             <h6 class="text-uppercase txt-dull-blue font-weight-bold">A Team Of Professionals.</h5>
                                 <p class="my-txt-mute mb-0">
-                                    We strive to provide a high level of personalized service, whether you are a vendor
-                                    or a
-                                    potential purchaser.
+                                    We strive to provide a high level of personalized service, whether you are a vendor or a potential purchaser.
                                 </p>
                         </div>
                     </div>
@@ -276,59 +282,47 @@
                         <div class="card">
                             <div class="card-header" id="headingOne">
                                 <h3 class="accordion-heading">
-                                    <a href="#collapseOne" role="button" data-toggle="collapse" aria-expanded="true"
-                                        aria-controls="collapseOne">
+                                    <a href="#collapseOne" role="button" data-toggle="collapse" aria-expanded="true" aria-controls="collapseOne">
                                         Our Values
                                         <span class="accordion-indicator"></span>
                                     </a>
                                 </h3>
                             </div>
-                            <div class="collapse show" id="collapseOne" aria-labelledby="headingOne"
-                                data-parent="#accordionExample">
+                            <div class="collapse show" id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample">
                                 <div class="card-body">
-                                    Our team will always provide you with honest, carefully considered advice. We will
-                                    ensure you are in the best possible position to make clear decisions. Your success
-                                    is our principal driver.
+                                    Our team will always provide you with honest, carefully considered advice. We will ensure you are in the best possible position to make clear decisions. Your success is our principal driver.
                                 </div>
                             </div>
                         </div>
                         <div class="card">
                             <div class="card-header" id="headingTwo">
                                 <h3 class="accordion-heading">
-                                    <a class="collapsed" href="#collapseTwo" role="button" data-toggle="collapse"
-                                        aria-expanded="true" aria-controls="collapseTwo">
+                                    <a class="collapsed" href="#collapseTwo" role="button" data-toggle="collapse" aria-expanded="true" aria-controls="collapseTwo">
                                         Professionalism
                                         <span class="accordion-indicator"></span>
                                     </a>
                                 </h3>
                             </div>
-                            <div class="collapse" id="collapseTwo" aria-labelledby="headingTwo"
-                                data-parent="#accordionExample">
+                            <div class="collapse" id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordionExample">
                                 <div class="card-body">
-                                    At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                                    blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas
-                                    molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa
-                                    qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+                                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia
+                                    animi, id est laborum et dolorum fuga.
                                 </div>
                             </div>
                         </div>
                         <div class="card">
                             <div class="card-header" id="headingThree">
                                 <h3 class="accordion-heading">
-                                    <a class="collapsed" href="#collapseThree" role="button" data-toggle="collapse"
-                                        aria-expanded="true" aria-controls="collapseThree">
+                                    <a class="collapsed" href="#collapseThree" role="button" data-toggle="collapse" aria-expanded="true" aria-controls="collapseThree">
                                         Expertise
                                         <span class="accordion-indicator"></span>
                                     </a>
                                 </h3>
                             </div>
-                            <div class="collapse" id="collapseThree" aria-labelledby="headingThree"
-                                data-parent="#accordionExample">
+                            <div class="collapse" id="collapseThree" aria-labelledby="headingThree" data-parent="#accordionExample">
                                 <div class="card-body">
-                                    At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                                    blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas
-                                    molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa
-                                    qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+                                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia
+                                    animi, id est laborum et dolorum fuga.
                                 </div>
                             </div>
                         </div>
@@ -345,11 +339,9 @@
             <div class="col-md-4 card cz-gallery border-0 mb-5">
 
                 <h4 class="font-weight-bold txt-dull-blue text-center mb-5">Real Estate Specialist</h4>
-                <a class="gallery-item card-img-top" href="./img/team-md-i.jpg"
-                    data-sub-html="&lt;h6 class=&quot;font-size-sm text-light&quot;&gt;Mudiaga Imarah MD, Insighthills Invesment&lt;/h6&gt;">
+                <a class="gallery-item card-img-top" href="./img/team-md-i.jpg" data-sub-html="&lt;h6 class=&quot;font-size-sm text-light&quot;&gt;Mudiaga Imarah MD, Insighthills Invesment&lt;/h6&gt;">
 
-                    <img src="./img/team-md-i.jpg" alt="Gallery thumbnail"
-                        class="rounded-circle team-img-fit d-block mx-auto" />
+                    <img src="./img/team-md-i.jpg" alt="Gallery thumbnail" class="rounded-circle team-img-fit d-block mx-auto" />
                 </a>
                 <div class="card-body text-center">
                     <h5 class="card-title font-weight-bold">Mudiaga Imarah</h5>
@@ -397,8 +389,7 @@
                     <form class="mt-5 mb-4">
                         <input type="text" class="form-control rounded-0 border-0 mb-3" placeholder="Full Name">
                         <input type="text" class="form-control rounded-0 border-0 mb-3" placeholder="Email">
-                        <textarea class="form-control rounded-0 border-0 mb-3" placeholder="Message"
-                            rows="4"></textarea>
+                        <textarea class="form-control rounded-0 border-0 mb-3" placeholder="Message" rows="4"></textarea>
                         <button type="submit" class="btn btn-light shadow ">Submit</button>
                     </form>
 
@@ -453,10 +444,8 @@
                         </div>
                         <div class="col-md-5">
                             <div class="map-holder">
-                                <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.61175673917!2d3.3913639142667407!3d6.570586124438286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b929c3c80fb7f%3A0xf557747284860990!2sLightHill%20Group!5e0!3m2!1sen!2sng!4v1600243733776!5m2!1sen!2sng"
-                                    width="150" height="150" frameborder="0" style="border:0;" allowfullscreen=""
-                                    aria-hidden="false" tabindex="0"></iframe>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.61175673917!2d3.3913639142667407!3d6.570586124438286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b929c3c80fb7f%3A0xf557747284860990!2sLightHill%20Group!5e0!3m2!1sen!2sng!4v1600243733776!5m2!1sen!2sng"
+                                    width="150" height="150" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                             </div>
                         </div>
                     </div>
@@ -497,10 +486,8 @@
                         </div>
                         <div class="col-md-5">
                             <div class="map-holder">
-                                <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.61175673917!2d3.3913639142667407!3d6.570586124438286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b929c3c80fb7f%3A0xf557747284860990!2sLightHill%20Group!5e0!3m2!1sen!2sng!4v1600243733776!5m2!1sen!2sng"
-                                    width="150" height="150" frameborder="0" style="border:0;" allowfullscreen=""
-                                    aria-hidden="false" tabindex="0"></iframe>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.61175673917!2d3.3913639142667407!3d6.570586124438286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b929c3c80fb7f%3A0xf557747284860990!2sLightHill%20Group!5e0!3m2!1sen!2sng!4v1600243733776!5m2!1sen!2sng"
+                                    width="150" height="150" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                             </div>
                         </div>
                     </div>

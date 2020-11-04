@@ -5313,6 +5313,7 @@ input[type="button"].btn-block {
     display: inline-block;
     padding-right: .425rem;
     color: #a6acb7;
+    font-weight:700 ;
     content: "/"
 }
 

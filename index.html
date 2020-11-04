@@ -7,17 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Lighthill Home</title>
     <!-- favicon -->
-    <link rel="icon" href="https://lighthillng.com/wp-content/uploads/2018/03/cropped-nG128kEm_400x400-192x192.jpg"
-        sizes="192x192" />
+    <link rel="icon" href="https://lighthillng.com/wp-content/uploads/2018/03/cropped-nG128kEm_400x400-192x192.jpg" sizes="192x192" />
 
     <!-- Font type -->
-    <link
-        rel="https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css">
+    <link rel="https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css">
 
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <!-- Main Theme Styles + Bootstrap-->
     <link rel="stylesheet" media="screen" id="main-styles" href="./css/theme.min.css">
     <!-- css for external css -->
@@ -30,6 +27,30 @@
 </head>
 
 <body>
+    <!-- Search Modal here -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog mt-0 modal-lg mx-0 mx-md-auto ">
+            <div class="modal-content  search-mod-bg rounded-0 border-0">
+                <div class="modal-header py-2 border-bottom-0">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- <div class="form-group">
+                        <input type="text" class="form-control " placeholder="Search...">
+                    </div> -->
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text " id="basic-addon1"> <i class="fa fa-search text-muted"></i> </span>
+                        </div>
+                        <input type="text" class="form-control border-left-0" placeholder="Search..." aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Header section -->
     <header>
 
@@ -73,8 +94,7 @@
             <div class="navbar navbar-expand-lg navbar-light">
                 <div class="container">
                     <!-- Logo for large screen -->
-                    <a class="navbar-brand d-none d-sm-block mr-3 flex-shrink-0" href="index.html"
-                        style="min-width: 7rem;">
+                    <a class="navbar-brand d-none d-sm-block mr-3 flex-shrink-0" href="index.html" style="min-width: 7rem;">
                         <img width="142" src="./img/light hill logo.png" alt="Light Hill" />
                     </a>
                     <!-- Logo for smaller screen (Mobile phones) -->
@@ -84,8 +104,7 @@
 
                     <!-- Navbar Items-->
                     <div class="navbar-toolbar d-flex flex-shrink-0 align-items-center">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse"
-                            data-target="#navbarCollapse">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <ul class="nav desktop-nav">
@@ -99,12 +118,11 @@
                                 <a class="nav-link" href="team.html">Team LightHill</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-                                    aria-haspopup="true" aria-expanded="false">Subsidiaries</a>
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Subsidiaries</a>
                                 <div class="dropdown-menu">
                                     <a class="dropdown-item" href="investment.html">Lighthill Investment Company Ltd</a>
                                     <a class="dropdown-item" href="logistic.html">Lighthill Logistics Company Ltd<</a>
-                                            <a class="dropdown-item" href="agro.html">InsightHills BDC Ltd</a>
+                                    <a class="dropdown-item" href="agro.html">InsightHills BDC Ltd</a>
                                     <a class="dropdown-item" href="property.html">Insighthills Investment and Procument
                                         Ltd</a>
                                 </div>
@@ -118,7 +136,7 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="contact.html">Contact</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item" data-toggle="modal" data-target="#searchModal">
                                 <a class="nav-link" href="#">
                                     <i class="fa fa-search"></i>
                                 </a>
@@ -141,12 +159,11 @@
                                 <a class="nav-link d-inline-block" href="team.html">Team LightHill</a>
                             </li>
                             <li class="nav-item dropdown  d-inline-block">
-                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-                                    aria-haspopup="true" aria-expanded="false">Subsidiaries</a>
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Subsidiaries</a>
                                 <div class="dropdown-menu">
                                     <a class="dropdown-item" href="investment.html">Lighthill Investment Company Ltd</a>
                                     <a class="dropdown-item" href="logistic.html">Lighthill Logistics Company Ltd<</a>
-                                            <a class="dropdown-item" href="agro.html">InsightHills BDC Ltd</a>
+                                    <a class="dropdown-item" href="agro.html">InsightHills BDC Ltd</a>
                                     <a class="dropdown-item" href="property.html">Insighthills Investment and Procument
                                         Ltd</a>
                                 </div>
@@ -160,7 +177,7 @@
                             <li class="nav-item">
                                 <a class="nav-link d-inline-block" href="contact.html">Contact</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item" data-toggle="modal" data-target="#searchModal">
                                 <a class="nav-link d-inline-block" href="#">
                                     <i class="fa fa-search"></i>
                                 </a>
@@ -209,20 +226,17 @@
                                         <div class="d-block my-auto wlc-div pt-0 pt-md-4">
                                             <h2 class="mb-4 slider-header">LightHill</h2>
                                             <p class="mb-4 mr-3 mr-md-5">
-                                                We have been in successful operation for over seven years now with
-                                                outstanding results.
+                                                We have been in successful operation for over seven years now with outstanding results.
                                             </p>
                                             <div class="wlc-btns">
-                                                <a class="d-inline-block btn btn-sm mr-2 mr-md-3"
-                                                    href="about.html">Learn
+                                                <a class="d-inline-block btn btn-sm mr-2 mr-md-3" href="about.html">Learn
                                                     more</a>
                                                 <a class="d-inline-block btn btn-sm" href="contact.html">Contact us</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-4">
-                                        <img class="flex-shrink-0 ml-auto" src="./img/female-amb.png"
-                                            alt="lighthill welcom you">
+                                        <img class="flex-shrink-0 ml-auto" src="./img/female-amb.png" alt="lighthill welcom you">
                                     </div>
                                 </div>
                             </div>
@@ -232,20 +246,17 @@
                                         <div class="d-block my-auto wlc-div pt-0 pt-md-4">
                                             <h2 class="mb-4 slider-header">LightHill</h2>
                                             <p class="mb-4 mr-5">
-                                                We have been in successful operation for over seven years now with
-                                                outstanding results.
+                                                We have been in successful operation for over seven years now with outstanding results.
                                             </p>
                                             <div class="wlc-btns">
-                                                <a class="d-inline-block btn-sm btn mr-2 mr-md-3"
-                                                    href="about.html">Learn
+                                                <a class="d-inline-block btn-sm btn mr-2 mr-md-3" href="about.html">Learn
                                                     more</a>
                                                 <a class="d-inline-block btn-sm btn" href="contact.html">Contact us</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-4">
-                                        <img class="d-block flex-shrink-0 ml-auto" src="./img/boss.png"
-                                            alt="Women Sportswear">
+                                        <img class="d-block flex-shrink-0 ml-auto" src="./img/boss.png" alt="Women Sportswear">
                                     </div>
                                 </div>
                             </div>
@@ -269,8 +280,8 @@
                     </div>
                     <div class="col-lg-9 col-md-12">
                         <h5 class="mb-3">On Time Service.</h5>
-                        <p class="mb-0">Known for the best time management in getting the best services
-                            and products to clients</p>
+                        <p class="mb-0">Known for the best time management in getting the best services and products to clients
+                        </p>
                     </div>
                 </div>
             </li>
@@ -310,13 +321,9 @@
                 <div class="pr-lg-4 subsidiary-container">
                     <h3 class="mb-4 mt-5 mt-md-0">Subsidiaries of LightHill Group</h3>
                     <p class="">
-                        But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain
-                        was born and I will give you a complete account of the system, and expound the actual teachings
-                        of the great explorer of the truth, the master-builder of human happiness. No one rejects,
-                        dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know
-                        how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again
-                        is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain,
-                        but because occasionally circumstances.
+                        But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human
+                        happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone
+                        who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances.
                     </p>
                     <h6 class="mt-4 font-weight-bold">View Subsidiaries <i class="fas fa-long-arrow-alt-right ml-2"></i>
                     </h6>
@@ -334,8 +341,7 @@
                         <div class="rounded-circle py-5 px-3 border text-center align-middle d-block mx-auto circle-2">
                             <h5 class="mt-4 text-green">InsightHills Investment</h5>
                             <p class="px-3 text-light">
-                                Managing a process that is highly collaborative and based on the scientific principles
-                                of open inquiry, testing, analysis, peer review and thoughtful execution
+                                Managing a process that is highly collaborative and based on the scientific principles of open inquiry, testing, analysis, peer review and thoughtful execution
                             </p>
                         </div>
                     </div>
@@ -374,8 +380,7 @@
                         <div class="rounded-circle py-5 px-3 border text-center align-middle d-block mx-auto circle-7">
                             <h5 class="mt-4 text-green">InsightHills Investment</h5>
                             <p class="px-3 text-light">
-                                Managing a process that is highly collaborative and based on the scientific principles
-                                of open inquiry, testing, analysis, peer review and thoughtful execution
+                                Managing a process that is highly collaborative and based on the scientific principles of open inquiry, testing, analysis, peer review and thoughtful execution
                             </p>
                         </div>
                     </div>
@@ -490,8 +495,7 @@
                             <i class="fa fa-star active"></i>
                             <i class="fa fa-star active"></i>
                         </div>
-                        <p class="mb-5">Great response time when selling and buying currency. I have not been
-                            disappointed. </p>
+                        <p class="mb-5">Great response time when selling and buying currency. I have not been disappointed. </p>
                         <a href="#" class="mb-0 mt-2 text-green">Read More Testimonies<i
                                 class="fas fa-long-arrow-alt-right ml-2"></i> </a>
                     </div>
@@ -539,8 +543,7 @@
                         <div class="card mr-0 mr-md-4 mb-4 mb-lg-0 border-0">
                             <div class="row">
                                 <div class="col-md-3">
-                                    <img src="./img/anony-avatar.png" width="50" height="50"
-                                        class="rounded-circle d-block mx-auto mb-3 " />
+                                    <img src="./img/anony-avatar.png" width="50" height="50" class="rounded-circle d-block mx-auto mb-3 " />
                                 </div>
                                 <div class="col-md-9">
                                     <div class="card shadow bg-light">
@@ -552,11 +555,7 @@
                                                 <i class="fa fa-star active"></i>
                                                 <i class="fa fa-star active"></i>
                                             </div>
-                                            <p class="mb-0 pt-3">Great response time when selling and buying
-                                                currency. I
-                                                have
-                                                not been
-                                                disappointed.
+                                            <p class="mb-0 pt-3">Great response time when selling and buying currency. I have not been disappointed.
                                             </p>
                                             <h6 class="mt-4 mb-0">Adewale Sobayo</h6>
                                             <small class="text-green">CFO, Means Tech</small>
@@ -570,8 +569,7 @@
                         <div class="card mr-0 mr-md-4 mb-4 mb-lg-0 border-0">
                             <div class="row">
                                 <div class="col-md-3">
-                                    <img src="./img/anony-avatar.png" width="50" height="50"
-                                        class="rounded-circle d-block mx-auto mb-3" />
+                                    <img src="./img/anony-avatar.png" width="50" height="50" class="rounded-circle d-block mx-auto mb-3" />
                                 </div>
                                 <div class="col-md-9">
                                     <div class="card shadow bg-light">
@@ -584,8 +582,7 @@
                                                 <i class="fa fa-star active"></i>
                                             </div>
                                             <p class="mb-0 pt-3">
-                                                Investment Opportunities are numerous with Attractive Returns on
-                                                Investment
+                                                Investment Opportunities are numerous with Attractive Returns on Investment
                                             </p>
                                             <h6 class="mt-4 mb-0">Adewale Sobayo</h6>
                                             <small class="text-green">CFO, Means Tech</small>
@@ -600,8 +597,7 @@
                         <div class="card mr-0 mr-md-4 mb-4 mb-lg-0 border-0">
                             <div class="row">
                                 <div class="col-md-3">
-                                    <img src="./img/anony-avatar.png" width="50" height="50"
-                                        class="rounded-circle d-block mx-auto mb-3" />
+                                    <img src="./img/anony-avatar.png" width="50" height="50" class="rounded-circle d-block mx-auto mb-3" />
                                 </div>
                                 <div class="col-md-9">
                                     <div class="card shadow bg-light">
@@ -630,8 +626,7 @@
                         <div class="card mr-0 mr-md-4 mb-4 mb-lg-0 border-0">
                             <div class="row">
                                 <div class="col-md-3">
-                                    <img src="./img/anony-avatar.png" width="50" height="50"
-                                        class="rounded-circle d-block mx-auto mb-3" />
+                                    <img src="./img/anony-avatar.png" width="50" height="50" class="rounded-circle d-block mx-auto mb-3" />
                                 </div>
                                 <div class="col-md-9">
                                     <div class="card shadow bg-light">
@@ -668,8 +663,7 @@
                 <img src="./img/boss.png" width="200" height="200" class="rounded-circle" />
                 <div class="w-50 w-md-auto d-block mx-auto position-relative py-3 px-3 py-md-4 px-md-5">
                     <i class="fas fa-quote-right quote-r position-absolute"></i>
-                    <h6 class="">Our goal is to be at the heart of the financial services industry as businesses expand
-                        across.
+                    <h6 class="">Our goal is to be at the heart of the financial services industry as businesses expand across.
                     </h6>
                     <i class="fas fa-quote-left quote-l position-absolute"></i>
                 </div>
@@ -729,8 +723,7 @@
                                 <div class="form-group">
                                     <textarea class="form-control" placeholder="Message" rows="4"></textarea>
                                 </div>
-                                <button type="submit"
-                                    class="btn bg-green text-light shadow d-block mx-auto">Submit</button>
+                                <button type="submit" class="btn bg-green text-light shadow d-block mx-auto">Submit</button>
                             </form>
                         </div>
                     </div>
@@ -749,8 +742,7 @@
                     <form class="mt-5 mb-4">
                         <input type="text" class="form-control rounded-0 border-0 mb-3" placeholder="Full Name">
                         <input type="text" class="form-control rounded-0 border-0 mb-3" placeholder="Email">
-                        <textarea class="form-control rounded-0 border-0 mb-3" placeholder="Message"
-                            rows="4"></textarea>
+                        <textarea class="form-control rounded-0 border-0 mb-3" placeholder="Message" rows="4"></textarea>
                         <button type="submit" class="btn btn-light shadow ">Submit</button>
                     </form>
 
@@ -805,10 +797,8 @@
                         </div>
                         <div class="col-md-5">
                             <div class="map-holder">
-                                <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.61175673917!2d3.3913639142667407!3d6.570586124438286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b929c3c80fb7f%3A0xf557747284860990!2sLightHill%20Group!5e0!3m2!1sen!2sng!4v1600243733776!5m2!1sen!2sng"
-                                    width="150" height="150" frameborder="0" style="border:0;" allowfullscreen=""
-                                    aria-hidden="false" tabindex="0"></iframe>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.61175673917!2d3.3913639142667407!3d6.570586124438286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b929c3c80fb7f%3A0xf557747284860990!2sLightHill%20Group!5e0!3m2!1sen!2sng!4v1600243733776!5m2!1sen!2sng"
+                                    width="150" height="150" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                             </div>
                         </div>
                     </div>
@@ -849,10 +839,8 @@
                         </div>
                         <div class="col-md-5">
                             <div class="map-holder">
-                                <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.61175673917!2d3.3913639142667407!3d6.570586124438286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b929c3c80fb7f%3A0xf557747284860990!2sLightHill%20Group!5e0!3m2!1sen!2sng!4v1600243733776!5m2!1sen!2sng"
-                                    width="150" height="150" frameborder="0" style="border:0;" allowfullscreen=""
-                                    aria-hidden="false" tabindex="0"></iframe>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.61175673917!2d3.3913639142667407!3d6.570586124438286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b929c3c80fb7f%3A0xf557747284860990!2sLightHill%20Group!5e0!3m2!1sen!2sng!4v1600243733776!5m2!1sen!2sng"
+                                    width="150" height="150" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                             </div>
                         </div>
                     </div>

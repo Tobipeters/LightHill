@@ -8,12 +8,10 @@
     <title>Subsidiary | Investment</title>
 
     <!-- favicon -->
-    <link rel="icon" href="https://lighthillng.com/wp-content/uploads/2018/03/cropped-nG128kEm_400x400-192x192.jpg"
-        sizes="192x192" />
+    <link rel="icon" href="https://lighthillng.com/wp-content/uploads/2018/03/cropped-nG128kEm_400x400-192x192.jpg" sizes="192x192" />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <!-- Main Theme Styles + Bootstrap-->
     <link rel="stylesheet" media="screen" id="main-styles" href="./css/theme.min.css">
     <!-- css for external css -->
@@ -26,6 +24,29 @@
 </head>
 
 <body>
+    <!-- Search Modal here -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog mt-0 modal-lg mx-0 mx-md-auto ">
+            <div class="modal-content  search-mod-bg rounded-0 border-0">
+                <div class="modal-header py-2 border-bottom-0">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                </div>
+                <div class="modal-body">
+                    <!-- <div class="form-group">
+                                <input type="text" class="form-control " placeholder="Search...">
+                            </div> -->
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text " id="basic-addon1"> <i class="fa fa-search text-muted"></i> </span>
+                        </div>
+                        <input type="text" class="form-control border-left-0" placeholder="Search..." aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Header section -->
     <header>
 
@@ -69,8 +90,7 @@
             <div class="navbar navbar-expand-lg navbar-light">
                 <div class="container">
                     <!-- Logo for large screen -->
-                    <a class="navbar-brand d-none d-sm-block mr-3 flex-shrink-0" href="index.html"
-                        style="min-width: 7rem;">
+                    <a class="navbar-brand d-none d-sm-block mr-3 flex-shrink-0" href="index.html" style="min-width: 7rem;">
                         <img width="142" src="./img/light hill logo.png" alt="Light Hill" />
                     </a>
                     <!-- Logo for smaller screen (Mobile phones) -->
@@ -80,13 +100,12 @@
 
                     <!-- Navbar Items-->
                     <div class="navbar-toolbar d-flex flex-shrink-0 align-items-center">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse"
-                            data-target="#navbarCollapse">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <ul class="nav desktop-nav">
                             <li class="nav-item">
-                                <a class="nav-link active" href="index.html">Home</a>
+                                <a class="nav-link" href="index.html">Home</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="about.html">About us</a>
@@ -95,12 +114,11 @@
                                 <a class="nav-link" href="team.html">Team LightHill</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-                                    aria-haspopup="true" aria-expanded="false">Subsidiaries</a>
+                                <a class="nav-link active dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Subsidiaries</a>
                                 <div class="dropdown-menu">
                                     <a class="dropdown-item" href="investment.html">Lighthill Investment Company Ltd</a>
                                     <a class="dropdown-item" href="logistic.html">Lighthill Logistics Company Ltd<</a>
-                                            <a class="dropdown-item" href="agro.html">InsightHills BDC Ltd</a>
+                                    <a class="dropdown-item" href="agro.html">InsightHills BDC Ltd</a>
                                     <a class="dropdown-item" href="property.html">Insighthills Investment and Procument
                                         Ltd</a>
                                 </div>
@@ -114,7 +132,7 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="contact.html">Contact</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item" data-toggle="modal" data-target="#searchModal">
                                 <a class="nav-link" href="#">
                                     <i class="fa fa-search"></i>
                                 </a>
@@ -137,12 +155,11 @@
                                 <a class="nav-link d-inline-block" href="team.html">Team LightHill</a>
                             </li>
                             <li class="nav-item dropdown  d-inline-block">
-                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-                                    aria-haspopup="true" aria-expanded="false">Subsidiaries</a>
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Subsidiaries</a>
                                 <div class="dropdown-menu">
                                     <a class="dropdown-item" href="investment.html">Lighthill Investment Company Ltd</a>
                                     <a class="dropdown-item" href="logistic.html">Lighthill Logistics Company Ltd<</a>
-                                            <a class="dropdown-item" href="agro.html">InsightHills BDC Ltd</a>
+                                    <a class="dropdown-item" href="agro.html">InsightHills BDC Ltd</a>
                                     <a class="dropdown-item" href="property.html">Insighthills Investment and Procument
                                         Ltd</a>
                                 </div>
@@ -156,7 +173,7 @@
                             <li class="nav-item">
                                 <a class="nav-link d-inline-block" href="contact.html">Contact</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item" data-toggle="modal" data-target="#searchModal">
                                 <a class="nav-link d-inline-block" href="#">
                                     <i class="fa fa-search"></i>
                                 </a>
@@ -189,47 +206,29 @@
             <div class="row px-3 px-md-0">
                 <div class="col-md-6 order-2 order-md-1">
                     <p class="pt-4 my-txt-mute">
-                        <span class="text-dark font-weight-bold">In the face</span> of
-                        dire economic straits occasioned by the worst recession experienced in the chequered history of
-                        the country, a situation that gave rise to high inflation rate leaving many lacking the ability
-                        to afford their daily needs including household items. There is the urgent need for a window to
-                        address the hapless situations of the people especially those in paid employment.
+                        <span class="text-dark font-weight-bold">In the face</span> of dire economic straits occasioned by the worst recession experienced in the chequered history of the country, a situation that gave rise to high inflation rate leaving
+                        many lacking the ability to afford their daily needs including household items. There is the urgent need for a window to address the hapless situations of the people especially those in paid employment.
                     </p>
                     <p class="my-txt-mute">
-                        Insighthills
-                        Investment & Procurement Company Limited (IIPL) is a financial services company that provides a
-                        wide range of credit solutions. Our platforms are specifically designed to meet the needs of
-                        individual, corporate and institutional customers. Our focus is Consumer Lending and Asset
-                        Leasing. This enables us to fulfil our primary objective of delivering competitive investment
-                        performance, along with the highest levels of customer services.
+                        Insighthills Investment & Procurement Company Limited (IIPL) is a financial services company that provides a wide range of credit solutions. Our platforms are specifically designed to meet the needs of individual, corporate and institutional customers.
+                        Our focus is Consumer Lending and Asset Leasing. This enables us to fulfil our primary objective of delivering competitive investment performance, along with the highest levels of customer services.
                     </p>
                     <p class="my-txt-mute">
-                        For years we have been
-                        satisfying our customers in a wide range of products we offered at their convenience; such as
-                        Cruise Control Package (CCP), Boom Town Package (BTP) and Bailout Package (BOP).
+                        For years we have been satisfying our customers in a wide range of products we offered at their convenience; such as Cruise Control Package (CCP), Boom Town Package (BTP) and Bailout Package (BOP).
                     </p>
 
                     <ul class="my-txt-mute">
                         <li class="">
-                            We hold ourselves accountable for the disciplined management of risk and for doing the right
-                            thing.
+                            We hold ourselves accountable for the disciplined management of risk and for doing the right thing.
                         </li>
                         <li class="">
-                            We strive to create long-term value for our stakeholders through strong business
-                            fundamentals,
-                            consistent with our mission guided by our vision and directed by our company's core values.
+                            We strive to create long-term value for our stakeholders through strong business fundamentals, consistent with our mission guided by our vision and directed by our company's core values.
                         </li>
                         <li class="">
-                            Our top
-                            priority, every minute of the day, is to serve our customers the very best we can(Customers
-                            First).
-                            To do this, we rely on the quality and commitment of our people(People Development), and on
-                            our
-                            ability to cooperate and generate synergies
+                            Our top priority, every minute of the day, is to serve our customers the very best we can(Customers First). To do this, we rely on the quality and commitment of our people(People Development), and on our ability to cooperate and generate synergies
                         </li>
                         <li class="">
-                            We are known for delivering on our promises to our customers, and are recognized as a
-                            trusted brand and one of the world’s most admired companies.
+                            We are known for delivering on our promises to our customers, and are recognized as a trusted brand and one of the world’s most admired companies.
 
                         </li>
                     </ul>
@@ -254,9 +253,7 @@
                         <div class="col-9">
                             <h6 class="text-uppercase txt-dull-blue font-weight-bold">A Team Of Professionals.</h5>
                                 <p class="my-txt-mute mb-0">
-                                    We strive to provide a high level of personalized service, whether you are a vendor
-                                    or a
-                                    potential purchaser.
+                                    We strive to provide a high level of personalized service, whether you are a vendor or a potential purchaser.
                                 </p>
                         </div>
                     </div>
@@ -290,65 +287,49 @@
                         <div class="card">
                             <div class="card-header" id="headingOne">
                                 <h3 class="accordion-heading">
-                                    <a href="#collapseOne" role="button" data-toggle="collapse" aria-expanded="true"
-                                        aria-controls="collapseOne">
+                                    <a href="#collapseOne" role="button" data-toggle="collapse" aria-expanded="true" aria-controls="collapseOne">
                                         Our Values
                                         <span class="accordion-indicator"></span>
                                     </a>
                                 </h3>
                             </div>
-                            <div class="collapse show" id="collapseOne" aria-labelledby="headingOne"
-                                data-parent="#accordionExample">
+                            <div class="collapse show" id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample">
                                 <div class="card-body">
-                                    We hold ourselves accountable for the disciplined management of risk and for doing
-                                    the right thing. We strive to create long-term value for our stakeholders through
-                                    strong business fundamentals, consistent with our mission guided by our vision and
-                                    directed by our company’s core values. Our top priority, every minute of the day, is
-                                    to serve our customers the very best we can(Customers First). To do this, we rely on
-                                    the quality and commitment of our people(People Development), and on our ability to
-                                    cooperate and generate synergies We are known for delivering on our promises to our
-                                    customers, and are recognized as a trusted brand and one of the world’s most admired
-                                    companies.
+                                    We hold ourselves accountable for the disciplined management of risk and for doing the right thing. We strive to create long-term value for our stakeholders through strong business fundamentals, consistent with our mission guided by our vision and directed
+                                    by our company’s core values. Our top priority, every minute of the day, is to serve our customers the very best we can(Customers First). To do this, we rely on the quality and commitment of our people(People Development),
+                                    and on our ability to cooperate and generate synergies We are known for delivering on our promises to our customers, and are recognized as a trusted brand and one of the world’s most admired companies.
                                 </div>
                             </div>
                         </div>
                         <div class="card">
                             <div class="card-header" id="headingTwo">
                                 <h3 class="accordion-heading">
-                                    <a class="collapsed" href="#collapseTwo" role="button" data-toggle="collapse"
-                                        aria-expanded="true" aria-controls="collapseTwo">
+                                    <a class="collapsed" href="#collapseTwo" role="button" data-toggle="collapse" aria-expanded="true" aria-controls="collapseTwo">
                                         Our Character
                                         <span class="accordion-indicator"></span>
                                     </a>
                                 </h3>
                             </div>
-                            <div class="collapse" id="collapseTwo" aria-labelledby="headingTwo"
-                                data-parent="#accordionExample">
+                            <div class="collapse" id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordionExample">
                                 <div class="card-body">
-                                    At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                                    blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas
-                                    molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa
-                                    qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+                                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia
+                                    animi, id est laborum et dolorum fuga.
                                 </div>
                             </div>
                         </div>
                         <div class="card">
                             <div class="card-header" id="headingThree">
                                 <h3 class="accordion-heading">
-                                    <a class="collapsed" href="#collapseThree" role="button" data-toggle="collapse"
-                                        aria-expanded="true" aria-controls="collapseThree">
+                                    <a class="collapsed" href="#collapseThree" role="button" data-toggle="collapse" aria-expanded="true" aria-controls="collapseThree">
                                         Our Packages
                                         <span class="accordion-indicator"></span>
                                     </a>
                                 </h3>
                             </div>
-                            <div class="collapse" id="collapseThree" aria-labelledby="headingThree"
-                                data-parent="#accordionExample">
+                            <div class="collapse" id="collapseThree" aria-labelledby="headingThree" data-parent="#accordionExample">
                                 <div class="card-body">
-                                    At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                                    blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas
-                                    molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa
-                                    qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+                                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia
+                                    animi, id est laborum et dolorum fuga.
                                 </div>
                             </div>
                         </div>
@@ -363,12 +344,9 @@
     <section class="bg-sec py-5">
         <div class="container px-3 px-md-0">
             <p class="my-txt-mute text-center">
-                <span class="font-weight-bold text-dark">Lighthill Investment Company Ltd</span> is a multiple-ranged
-                products and services company, with its subsidiary
-                companies involved in the following businesses – Currency trading & investment, Bureau De Change energy,
-                logistics services ,Real Estate and Consumer loan & lease services. Our Currency trading & investment,
-                Bureau De Change business is managed by Lighthill Investment and Insighthills BDC which focuses on
-                financing trade & investment, Bureau De Change etc.
+                <span class="font-weight-bold text-dark">Lighthill Investment Company Ltd</span> is a multiple-ranged products and services company, with its subsidiary companies involved in the following businesses – Currency trading & investment, Bureau
+                De Change energy, logistics services ,Real Estate and Consumer loan & lease services. Our Currency trading & investment, Bureau De Change business is managed by Lighthill Investment and Insighthills BDC which focuses on financing trade
+                & investment, Bureau De Change etc.
             </p>
         </div>
     </section>
@@ -379,11 +357,9 @@
             <div class="col-md-4 card cz-gallery border-0 mb-5">
 
                 <h4 class="font-weight-bold txt-dull-blue text-center mb-5">Real Estate Specialist</h4>
-                <a class="gallery-item card-img-top" href="./img/team-md-i.jpg"
-                    data-sub-html="&lt;h6 class=&quot;font-size-sm text-light&quot;&gt;Mudiaga Imarah MD, Insighthills Invesment&lt;/h6&gt;">
+                <a class="gallery-item card-img-top" href="./img/team-md-i.jpg" data-sub-html="&lt;h6 class=&quot;font-size-sm text-light&quot;&gt;Mudiaga Imarah MD, Insighthills Invesment&lt;/h6&gt;">
 
-                    <img src="./img/team-md-i.jpg" alt="Gallery thumbnail"
-                        class="rounded-circle team-img-fit d-block mx-auto" />
+                    <img src="./img/team-md-i.jpg" alt="Gallery thumbnail" class="rounded-circle team-img-fit d-block mx-auto" />
                 </a>
                 <div class="card-body text-center">
                     <h5 class="card-title font-weight-bold">Mudiaga Imarah</h5>
@@ -431,8 +407,7 @@
                     <form class="mt-5 mb-4">
                         <input type="text" class="form-control rounded-0 border-0 mb-3" placeholder="Full Name">
                         <input type="text" class="form-control rounded-0 border-0 mb-3" placeholder="Email">
-                        <textarea class="form-control rounded-0 border-0 mb-3" placeholder="Message"
-                            rows="4"></textarea>
+                        <textarea class="form-control rounded-0 border-0 mb-3" placeholder="Message" rows="4"></textarea>
                         <button type="submit" class="btn btn-light shadow ">Submit</button>
                     </form>
 
@@ -487,10 +462,8 @@
                         </div>
                         <div class="col-md-5">
                             <div class="map-holder">
-                                <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.61175673917!2d3.3913639142667407!3d6.570586124438286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b929c3c80fb7f%3A0xf557747284860990!2sLightHill%20Group!5e0!3m2!1sen!2sng!4v1600243733776!5m2!1sen!2sng"
-                                    width="150" height="150" frameborder="0" style="border:0;" allowfullscreen=""
-                                    aria-hidden="false" tabindex="0"></iframe>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.61175673917!2d3.3913639142667407!3d6.570586124438286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b929c3c80fb7f%3A0xf557747284860990!2sLightHill%20Group!5e0!3m2!1sen!2sng!4v1600243733776!5m2!1sen!2sng"
+                                    width="150" height="150" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                             </div>
                         </div>
                     </div>
@@ -531,10 +504,8 @@
                         </div>
                         <div class="col-md-5">
                             <div class="map-holder">
-                                <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.61175673917!2d3.3913639142667407!3d6.570586124438286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b929c3c80fb7f%3A0xf557747284860990!2sLightHill%20Group!5e0!3m2!1sen!2sng!4v1600243733776!5m2!1sen!2sng"
-                                    width="150" height="150" frameborder="0" style="border:0;" allowfullscreen=""
-                                    aria-hidden="false" tabindex="0"></iframe>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.61175673917!2d3.3913639142667407!3d6.570586124438286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b929c3c80fb7f%3A0xf557747284860990!2sLightHill%20Group!5e0!3m2!1sen!2sng!4v1600243733776!5m2!1sen!2sng"
+                                    width="150" height="150" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                             </div>
                         </div>
                     </div>
