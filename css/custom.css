@@ -69,7 +69,8 @@ p,
     font-size: 14px;
 }
 
-.nav-link {
+.nav-link a,
+.dropdown-item a {
     color: #504B69;
 }
 
@@ -79,7 +80,8 @@ p,
 }
 
 .nav-link:hover,
-.nav-item .active {
+.nav-item .active,
+.dropdown-item a:hover {
     border-bottom: 1.2px solid #95CE4D !important;
 }
 
