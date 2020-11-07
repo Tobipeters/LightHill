@@ -80,9 +80,10 @@ p,
 }
 
 .nav-link:hover,
-.nav-item .active,
+.nav .active,
 .dropdown-item a:hover {
     border-bottom: 1.2px solid #95CE4D !important;
+    display: inline-block;
 }
 
 .slider-bg {
