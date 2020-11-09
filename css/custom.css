@@ -1,4 +1,9 @@
+.custom-modal-fade {
+    background: rgba(39, 104, 104, 0.8);
+}
+
 .search-mod-bg {
+    border: none;
     background-image: linear-gradient(to right, #fff, #F7FFFF);
 }
 
