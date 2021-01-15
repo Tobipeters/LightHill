@@ -694,3 +694,55 @@ footer {
         margin-top: 45rem;
     }
 }
+
+
+/* font-weight */
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+
+/* Just font size */
+
+.f-10 {
+    font-size: 10px;
+}
+
+.f-12 {
+    font-size: 12px;
+}
+
+.f-14 {
+    font-size: 14px;
+}
+
+.f-20 {
+    font-size: 20px;
+}
+
+.single-team-text p {
+    line-height: 1.7;
+}
+
+.font-container .fab,
+.font-container .fas,
+.font-container .fa-facebook-f,
+.font-container .fa-google-plus-g,
+.font-container .fa-skype,
+.font-container .fa-twitter,
+.font-container a {
+    color: #95CE4D !important;
+}
+
+.font-container a:hover {
+    color: #95ce4db8 !important;
+}
