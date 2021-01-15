@@ -283,7 +283,7 @@ p,
 
 .parallax-gradient {
     background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.2)), url("../img/para-img.png");
-    height: 500px;
+    /* height: 500px; */
 }
 
 .parallax,
@@ -648,7 +648,7 @@ footer {
         height: 650px;
     }
     .parallax-gradient {
-        height: 480px;
+        /* height: 480px; */
     }
     .btn-col {
         justify-content: start !important;
